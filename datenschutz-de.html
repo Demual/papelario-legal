@@ -44,7 +44,7 @@
 <ul>
   <li>Es gibt keine Registrierung, kein Konto, keinen Benutzernamen und kein Passwort für die App. Du wirst nie nach einer E-Mail-Adresse, einer Telefonnummer, einem Namen oder deinem Standort gefragt.</li>
   <li><strong>Sie lädt deine Dokumente nicht hoch.</strong> Die Fotos, die PDFs, der erkannte Text und deine Unterschriften werden auf deinem Handy verarbeitet und gespeichert. Diese App hat keine eigenen Server.</li>
-  <li>Sie verwendet keine eigenen Werkzeuge für Analysen, Nutzungsstatistiken oder Absturzberichte (kein Google Analytics, kein Firebase Analytics und kein Crashlytics). Die Google-Bibliotheken, die sie verwendet, senden ihre eigenen technischen Daten, wie weiter unten erklärt.</li>
+  <li>Die App enthält keine eigenen Werkzeuge für Analysen oder Absturzberichte (kein Google Analytics, kein Firebase Analytics und kein Crashlytics). Die Google-Bibliotheken senden dagegen ihre technischen Daten, die weiter unten erklärt werden.</li>
   <li>Es werden keine Daten zu kommerziellen Zwecken an Dritte verkauft, vermietet oder weitergegeben.</li>
   <li>Sie fragt nicht nach der Berechtigung für die Kamera, deine Dateien, deine Kontakte oder deinen Standort. Die Fotos macht der Dokumentenscanner von Google oder die Kamera des Systems, und Dateien werden über die Android-eigenen Bildschirme geöffnet und gespeichert, und zwar nur die, die du auswählst.</li>
   <li>Die Dokumente werden nicht in die Android-Sicherung in der Google-Cloud aufgenommen.</li>
@@ -76,20 +76,20 @@
   <li><strong>Visitenkarten.</strong> „Zu Kontakten hinzufügen“ öffnet die Kontakte-App des Handys mit bereits ausgefüllten Daten; speichern tust du sie selbst.</li>
   <li><strong>Zwischenablage.</strong> Die App kopiert Text nur dann in die Zwischenablage, wenn du es veranlasst.</li>
   <li><strong>Vorlesen.</strong> Der Text wird mit einer Stimme der jeweiligen Sprache vorgelesen, die auf dein Handy heruntergeladen ist und offline funktioniert: Er verlässt das Handy nicht. Wenn du keine hast, liest die App den Text nicht vor und zeigt dir, wie du die Stimme in den Android-Einstellungen herunterlädst.</li>
-  <li><strong>Problem melden.</strong> Öffnet deine E-Mail-App mit einer Nachricht, die die Version und die Sprache der App, das Handymodell, die Android-Version und die Art der letzten Fehler enthält (ohne deine Dokumente oder Texte). Sie wird nur gesendet, wenn du sie abschickst. JR Soft verwendet diese Nachricht und deine E-Mail-Adresse nur, um den Fehler zu untersuchen und dir zu antworten, gibt sie an niemanden weiter und löscht sie, sobald die Sache erledigt ist, spätestens nach einem Jahr.</li>
+  <li><strong>Problem melden.</strong> Öffnet deine E-Mail-App mit einer Nachricht, die die App-Version, das Handymodell, die Android-Version, die Sprache der App und die Art der letzten Fehler enthält (ohne deine Dokumente oder Texte). Sie wird nur gesendet, wenn du sie abschickst. Wenn du sie uns schickst, erhalten wir deine E-Mail-Adresse und diesen Text; wir verwenden sie nur, um dir zu antworten und den Fehler zu beheben, und löschen die Nachricht, sobald sie nicht mehr benötigt wird.</li>
 </ul>
 
 <h2>Daten, die dein Handy verlassen</h2>
 
 <h3>Scanner und Texterkennung: Google ML Kit</h3>
-<p>Die Fotos werden mit dem <strong>Dokumentenscanner von Google</strong> aufgenommen und der Text mit <strong>ML Kit</strong> erkannt, Google-Bibliotheken, die über die Google Play-Dienste auf dem Handy laufen (diese laden beim ersten Mal ihre Modelle herunter). <strong>Weder die Bilder noch der Text deiner Dokumente werden an Google gesendet.</strong> Was ML Kit jedoch an Google sendet, sind technische Daten über seinen Betrieb: Marke, Modell und Systemversion des Handys, App-Version, eine zufällige Installationskennung und eine Gerätekennung für Diagnosezwecke (die laut Google nicht dazu verwendet werden, dich zu identifizieren), Antwortzeiten und Fehlercodes. Google verwendet diese Daten, um diese Bibliotheken zu diagnostizieren und zu verbessern.</p>
+<p>Die Fotos werden mit dem <strong>Dokumentenscanner von Google</strong> aufgenommen und der Text mit <strong>ML Kit</strong> erkannt, Google-Bibliotheken, die über die Google Play-Dienste auf dem Handy laufen (diese laden beim ersten Mal ihre Modelle herunter). <strong>Weder die Bilder noch der Text deiner Dokumente werden an Google gesendet.</strong> Was ML Kit jedoch an Google sendet, sind technische Daten über seinen Betrieb: Marke, Modell und Systemversion des Handys, App-Version, eine Gerätekennung und eine Installationskennung (Letztere laut Google nicht dazu gedacht, dich oder dein Handy zu identifizieren), die Konfiguration und die Größe dessen, was verarbeitet wird (nicht der Inhalt), Antwortzeiten und Fehlercodes. Google verwendet diese Daten für die Diagnose und für Nutzungsstatistiken dieser Bibliotheken.</p>
 <p>Text auf Arabisch und Russisch wird mit <strong>Tesseract</strong> erkannt, einer Open-Source-Bibliothek, die in der App enthalten ist und keine Verbindung zum Internet herstellt.</p>
 
 <h3>Werbung: Google AdMob</h3>
 <p>Die App ist kostenlos und finanziert sich durch dezente Anzeigen von Google AdMob, die nur in der Bibliothek und im Bildschirm „Dokument gespeichert“ erscheinen: nie in der Kamera, beim Bearbeiten oder als Vollbild. Die Anzeigenanfragen enthalten nichts aus deinen Dokumenten oder ihrem Text.</p>
 <p>Wie bei jeder App mit AdMob erfasst das SDK von Google die <strong>Werbe-ID</strong> von Android (du kannst sie unter <em>Android-Einstellungen → Google → Werbung</em> zurücksetzen oder löschen), die Kennung des App-Sets (<em>app set ID</em>), deine IP-Adresse (aus der ein ungefährer Standort abgeleitet wird), die Interaktionen mit der App und mit den Anzeigen sowie Diagnosedaten. Google verwendet diese Daten, um Werbung auszuliefern und zu messen, für Statistiken und zur Betrugsprävention, gemäß seiner eigenen Richtlinie.</p>
-<p>Im Europäischen Wirtschaftsraum, im Vereinigten Königreich und in der Schweiz zeigt die App das Einwilligungsformular von Google an, bevor personalisierte Werbung ausgeliefert wird. Du kannst deine Entscheidung jederzeit unter <em>Optionen → Datenschutzoptionen für Werbung</em> ändern. Wenn du ablehnst, siehst du nicht personalisierte Werbung (oder eingeschränkte Werbung, ohne Kennungen für Werbezwecke und ohne Profile), und die App funktioniert genau gleich.</p>
-<p>Wie Google Daten verwendet, wenn du Apps nutzt, die Dienste von Google verwenden: <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</p>
+<p>Im Europäischen Wirtschaftsraum, im Vereinigten Königreich und in der Schweiz zeigt die App das Einwilligungsformular von Google an, bevor personalisierte Werbung ausgeliefert wird. Du kannst deine Entscheidung jederzeit unter <em>Optionen → Datenschutzoptionen für Werbung</em> ändern. Wenn du ablehnst, siehst du nicht personalisierte Werbung (oder eingeschränkte Werbung ohne Kennungen, wenn du auch der Nutzung des Speichers nicht zustimmst), und die App funktioniert genau gleich.</p>
+<p>Wie Google Informationen aus Apps verwendet, die seine Dienste nutzen: <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</p>
 
 <h3>Bewertungen und Google Play</h3>
 <p>Von Zeit zu Zeit kann die App dich nach einer erfolgreichen Nutzung über das offizielle Fenster von Google Play, das von Google verwaltet wird, um eine Bewertung bitten. „App bewerten“ und „Weitere Apps von JR Soft“ öffnen Google Play.</p>
@@ -122,17 +122,12 @@
   </tr>
 </table>
 
-<h2>Rechtsgrundlage und Speicherdauer</h2>
-<ul>
-  <li><strong>Personalisierte Werbung</strong> im Europäischen Wirtschaftsraum, im Vereinigten Königreich und in der Schweiz: deine <strong>Einwilligung</strong>, die du im Formular von Google erteilst oder verweigerst und jederzeit unter <em>Optionen → Datenschutzoptionen für Werbung</em> widerrufen kannst.</li>
-  <li><strong>Nicht personalisierte oder eingeschränkte Werbung, Betrugsprävention und technische Daten von ML Kit</strong>: das <strong>berechtigte Interesse</strong> daran, die App kostenlos anzubieten, sie vor Betrug zu schützen und dafür zu sorgen, dass Scanner und Texterkennung gut funktionieren. Du kannst widersprechen, indem du an die Kontaktadresse schreibst.</li>
-  <li><strong>E-Mails, die du uns schickst</strong> (zum Beispiel über „Problem melden“): die Bearbeitung deiner Anfrage.</li>
-</ul>
-<p>Für die Daten, die seine Bibliotheken erheben (AdMob und ML Kit), <strong>handelt Google als eigenständiger Verantwortlicher</strong> für die Verarbeitung, zu seinen eigenen Bedingungen und gemäß seiner eigenen Datenschutzerklärung.</p>
-<p>Die auf deinem Handy gespeicherten Daten bleiben dort, bis du sie löschst, die App deinstallierst oder die App-Daten löschst. Diese App speichert keine Daten außerhalb deines Handys, außer den E-Mails, die du uns schickst; Google bewahrt seine Daten gemäß seinen Richtlinien auf.</p>
-
 <h2>Internationale Datenübermittlungen</h2>
-<p>Google kann die von seinen Bibliotheken erhobenen Daten auf Servern außerhalb des Europäischen Wirtschaftsraums verarbeiten, auch in den Vereinigten Staaten. Google LLC ist dem <strong>EU-US-Datenschutzrahmen</strong> (Angemessenheitsbeschluss der Europäischen Kommission vom 10. Juli 2023) beigetreten und verwendet zusätzlich die <strong>Standardvertragsklauseln</strong> der Kommission: <a href="https://policies.google.com/privacy/frameworks">policies.google.com/privacy/frameworks</a>. Die E-Mails, die du uns schickst, werden in Gmail, einem Dienst von Google, zu denselben Bedingungen gespeichert.</p>
+<p>Google LLC kann diese Daten in den Vereinigten Staaten und in anderen Ländern verarbeiten. Google ist dem <strong>EU-US-Datenschutzrahmen</strong> (Angemessenheitsbeschluss der Europäischen Kommission vom 10. Juli 2023) beigetreten und verwendet bei Bedarf <strong>Standardvertragsklauseln</strong>: <a href="https://policies.google.com/privacy/frameworks">policies.google.com/privacy/frameworks</a>. Auch die Kontakt-E-Mail-Adresse nutzt einen Dienst von Google (Gmail).</p>
+
+<h2>Rechtsgrundlage und Speicherdauer</h2>
+<p><strong>Rechtsgrundlagen.</strong> Was auf deinem Handy verarbeitet wird, gelangt nicht zu JR Soft. Für das, was das Handy verlässt: (1) personalisierte Werbung und die Nutzung des Gerätespeichers zu Werbezwecken im EWR, im Vereinigten Königreich und in der Schweiz: deine <strong>Einwilligung</strong>, die du im Formular von Google erteilst oder verweigerst und unter <em>Optionen → Datenschutzoptionen für Werbung</em> widerrufen kannst (Art. 6.1.a DSGVO und Art. 22.2 LSSI-CE); (2) nicht personalisierte Werbung, ihre Messung und die Betrugsprävention: das <strong>berechtigte Interesse</strong>, eine kostenlose App zu finanzieren und sie vor Betrug zu schützen (Art. 6.1.f DSGVO); (3) technische Daten von ML Kit: das <strong>berechtigte Interesse</strong> daran, dass Scanner und Texterkennung funktionieren und ihre Fehler behoben werden (Art. 6.1.f DSGVO); (4) wenn du uns schreibst (zum Beispiel über „Problem melden“): die Bearbeitung deiner Nachricht. Google verarbeitet die Daten von AdMob und ML Kit als <strong>eigenständiger Verantwortlicher</strong>, nach seinen eigenen Richtlinien.</p>
+<p>Die auf deinem Handy gespeicherten Daten bleiben dort, bis du sie löschst, die App deinstallierst oder die App-Daten löschst. Diese App speichert keine Daten außerhalb deines Handys, außer den Nachrichten, die du uns schickst und die gelöscht werden, sobald sie nicht mehr benötigt werden; Google bewahrt seine Daten gemäß seinen Richtlinien auf.</p>
 
 <h2>Deine Rechte</h2>
 <p>Wenn du in der Europäischen Union wohnst, gewährt dir die DSGVO die Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit und Widerspruch. In der Praxis, und da diese App keine Daten von dir außerhalb des Handys speichert:</p>
@@ -145,8 +140,7 @@
 <p>Du kannst auch an die Kontaktadresse schreiben oder dich bei der Datenschutz-Aufsichtsbehörde deines Landes beschweren. In Spanien ist das die <a href="https://www.aepd.es">Agencia Española de Protección de Datos</a>.</p>
 
 <h2>Minderjährige</h2>
-<p>Diese App richtet sich nicht an Kinder unter 13 Jahren und erhebt wissentlich keine Daten von ihnen.</p>
-<p>In der Europäischen Union hängt das Alter, ab dem du personalisierter Werbung selbst zustimmen kannst, vom Land ab: 14 Jahre in Spanien und bis zu 16 Jahre in anderen Ländern. Wenn du jünger bist, bitte deine Mutter, deinen Vater oder deinen Vormund, die Werbeoptionen für dich auszuwählen (<em>Optionen → Datenschutzoptionen für Werbung</em>).</p>
+<p>Papelario richtet sich an Personen ab 18 Jahren. Wir erheben wissentlich keine Daten von Minderjährigen; die technischen Daten, die AdMob und ML Kit senden, sind die oben beschriebenen.</p>
 
 <h2>Änderungen dieser Erklärung</h2>
 <p>Wenn sich diese Erklärung wesentlich ändert, wird die neue Fassung unter derselben Adresse mit einem anderen Aktualisierungsdatum veröffentlicht.</p>

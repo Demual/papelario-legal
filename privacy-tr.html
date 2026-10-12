@@ -44,7 +44,7 @@
 <ul>
   <li>Uygulamada kayıt, hesap, kullanıcı adı ya da şifre yoktur. Senden asla e-posta, telefon numarası, ad ya da konum istenmez.</li>
   <li><strong>Belgelerini hiçbir yere yüklemez.</strong> Fotoğraflar, PDF’ler, tanınan metin ve imzaların telefonunda işlenir ve saklanır. Bu uygulamanın kendi sunucuları yoktur.</li>
-  <li>Uygulama kendine ait analiz, kullanım istatistiği ya da çökme raporlama araçları kullanmaz (ne Google Analytics ne Firebase Analytics ne de Crashlytics). Kullandığı Google kütüphaneleri ise aşağıda açıklandığı gibi kendi teknik verilerini gönderir.</li>
+  <li>Uygulama, kendine ait analiz ya da çökme raporlama araçları içermez (ne Google Analytics ne Firebase Analytics ne de Crashlytics). Google kütüphaneleri ise aşağıda açıklanan kendi teknik verilerini gönderir.</li>
   <li>Veriler ticari amaçlarla üçüncü taraflara satılmaz, kiralanmaz ya da devredilmez.</li>
   <li>Kamerayı, dosyalarını, kişilerini ya da konumunu kullanmak için izin istemez. Fotoğrafları Google’ın belge tarayıcısı ya da sistem kamerası çeker; dosyalar ise Android’in kendi ekranlarıyla açılır ve kaydedilir, yalnızca senin seçtiklerin.</li>
   <li>Belgeler, Android’in Google bulutundaki yedeğine dahil edilmez.</li>
@@ -76,20 +76,20 @@
   <li><strong>Kartvizitler.</strong> “Kişilere ekle”, telefonun kişiler uygulamasını bilgiler doldurulmuş olarak açar; kaydeden sensin.</li>
   <li><strong>Pano.</strong> Uygulama metni panoya yalnızca sen istediğinde kopyalar.</li>
   <li><strong>Sesli okuma.</strong> Metin, o dil için telefonuna indirilmiş ve internet bağlantısı olmadan çalışan bir sesle okunur: metin telefondan çıkmaz. Böyle bir ses yoksa uygulama metni okumaz ve sesi Android ayarlarından nasıl indireceğini gösterir.</li>
-  <li><strong>Sorun bildir.</strong> E-posta uygulamanı; uygulamanın sürümünü ve dilini, telefon modelini, Android sürümünü ve son hataların türünü içeren bir mesajla açar (hiçbir belgen ya da metnin olmadan). Yalnızca sen gönderirsen gönderilir. JR Soft bu e-postayı ve adresini yalnızca hatayı incelemek ve sana yanıt vermek için kullanır; bunları kimseyle paylaşmaz ve konu çözüldüğünde, en geç bir yıl sonra siler.</li>
+  <li><strong>Sorun bildir.</strong> E-posta uygulamanı; uygulama sürümünü, telefon modelini, Android sürümünü, uygulamanın dilini ve son hataların türünü içeren bir mesajla açar (hiçbir belgen ya da metnin olmadan). Yalnızca sen gönderirsen gönderilir. Mesajı bize gönderirsen e-posta adresini ve bu metni alırız; bunları yalnızca sana yanıt vermek ve hatayı çözmek için kullanırız ve artık gerekmediğinde mesajı sileriz.</li>
 </ul>
 
 <h2>Telefondan çıkan veriler</h2>
 
 <h3>Tarayıcı ve metin tanıma: Google ML Kit</h3>
-<p>Fotoğraflar <strong>Google’ın belge tarayıcısıyla</strong> çekilir, metin ise <strong>ML Kit</strong> ile tanınır. Bunlar, telefonun içinde Google Play hizmetleri aracılığıyla çalışan (modellerini ilk kullanımda indiren) Google kütüphaneleridir. <strong>Belgelerinin ne görüntüleri ne de metni Google’a gönderilir.</strong> ML Kit’in Google’a gönderdiği şey, kendi çalışmasıyla ilgili teknik verilerdir: telefonun markası, modeli ve sistem sürümü, uygulama sürümü, rastgele bir kurulum kimliği ve teşhis amaçlı bir cihaz kimliği (Google’a göre bunlar seni tanımlamak için kullanılmaz), yanıt süreleri ve hata kodları. Google bunları söz konusu kütüphaneleri teşhis etmek ve iyileştirmek için kullanır.</p>
+<p>Fotoğraflar <strong>Google’ın belge tarayıcısıyla</strong> çekilir, metin ise <strong>ML Kit</strong> ile tanınır. Bunlar, telefonun içinde Google Play hizmetleri aracılığıyla çalışan (modellerini ilk kullanımda indiren) Google kütüphaneleridir. <strong>Belgelerinin ne görüntüleri ne de metni Google’a gönderilir.</strong> ML Kit’in Google’a gönderdiği şey, kendi çalışmasıyla ilgili teknik verilerdir: telefonun markası, modeli ve sistem sürümü, uygulama sürümü, bir cihaz kimliği ve bir kurulum kimliği (Google’a göre ikincisi seni ya da telefonunu tanımlamak için tasarlanmamıştır), işlenen verinin ayarları ve boyutu (içeriği değil), yanıt süreleri ve hata kodları. Google bunları söz konusu kütüphanelerin teşhisi ve kullanım istatistikleri için kullanır.</p>
 <p>Arapça ve Rusça metinler, uygulamanın içinde bulunan ve internete bağlanmayan açık kaynaklı bir kütüphane olan <strong>Tesseract</strong> ile tanınır.</p>
 
 <h3>Reklamlar: Google AdMob</h3>
 <p>Uygulama ücretsizdir ve yalnızca kitaplıkta ve “Belge kaydedildi” ekranında görünen, göze batmayan Google AdMob reklamlarıyla ayakta durur: kamerada, düzenleme yaparken ya da tam ekranda asla. Reklam isteklerinde belgelerinden ya da metinlerinden hiçbir şey yer almaz.</p>
 <p>AdMob kullanan her uygulamada olduğu gibi Google SDK’sı; Android <strong>reklam kimliğini</strong> (bunu <em>Android Ayarları → Google → Reklamlar</em> bölümünden sıfırlayabilir ya da silebilirsin), uygulama grubu kimliğini (<em>app set ID</em>), IP adresini (bundan yaklaşık bir konum çıkarılır), uygulamayla ve reklamlarla etkileşimleri ve teşhis verilerini toplar. Google bunları kendi politikasına göre reklam göstermek ve ölçmek, istatistik ve dolandırıcılığı önlemek için kullanır.</p>
-<p>Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre’de uygulama, kişiselleştirilmiş reklam göstermeden önce Google’ın onay formunu gösterir. Tercihini istediğin zaman <em>Ayarlar → Reklam gizlilik seçenekleri</em> bölümünden değiştirebilirsin. Reddedersen kişiselleştirilmemiş reklamlar (ya da reklam kimlikleri ve profiller kullanılmayan sınırlı reklamlar) görürsün ve uygulama tamamen aynı şekilde çalışır.</p>
-<p>Hizmetlerini kullanan uygulamaları kullandığında Google’ın verileri nasıl kullandığını burada öğrenebilirsin: <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</p>
+<p>Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre’de uygulama, kişiselleştirilmiş reklam göstermeden önce Google’ın onay formunu gösterir. Tercihini istediğin zaman <em>Ayarlar → Reklam gizlilik seçenekleri</em> bölümünden değiştirebilirsin. Reddedersen kişiselleştirilmemiş reklamlar (depolama alanının kullanılmasını da kabul etmezsen kimlik kullanılmayan sınırlı reklamlar) görürsün ve uygulama tamamen aynı şekilde çalışır.</p>
+<p>Google’ın, hizmetlerini kullanan uygulamalardaki bilgileri nasıl kullandığı: <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</p>
 
 <h3>Değerlendirmeler ve Google Play</h3>
 <p>Uygulama, zaman zaman ve başarılı bir kullanımdan sonra, Google’ın yönettiği resmî Google Play penceresiyle senden bir değerlendirme isteyebilir. “Uygulamayı değerlendir” ve “JR Soft'un diğer uygulamaları” Google Play’i açar.</p>
@@ -122,17 +122,12 @@
   </tr>
 </table>
 
-<h2>Hukuki dayanak ve saklama</h2>
-<ul>
-  <li><strong>Kişiselleştirilmiş reklamlar</strong> (Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre’de): senin <strong>onayın</strong>. Onayı Google formunda verir ya da reddedersin ve istediğin zaman <em>Ayarlar → Reklam gizlilik seçenekleri</em> bölümünden geri çekebilirsin.</li>
-  <li><strong>Kişiselleştirilmemiş ya da sınırlı reklamlar, dolandırıcılığın önlenmesi ve ML Kit’in teknik verileri</strong>: uygulamayı ücretsiz tutmak, dolandırıcılığa karşı korumak ve tarayıcı ile metin tanımanın iyi çalışmasını sağlamak konusundaki <strong>meşru menfaat</strong>. İletişim adresine yazarak buna itiraz edebilirsin.</li>
-  <li><strong>Bize gönderdiğin e-postalar</strong> (örneğin “Sorun bildir” ile): talebini yerine getirmek.</li>
-</ul>
-<p>Google kütüphanelerinin (AdMob ve ML Kit) topladığı veriler bakımından <strong>Google bağımsız veri sorumlusu olarak hareket eder</strong>; bu veriler için Google’ın kendi koşulları ve gizlilik politikası geçerlidir.</p>
-<p>Telefonunda saklanan veriler, sen onları silene, uygulamayı kaldırana ya da uygulamanın verilerini silene kadar kalır. Bu uygulama, bize gönderdiğin e-postalar dışında telefonunun dışında hiçbir veri saklamaz; Google ise kendi verilerini kendi politikalarına göre saklar.</p>
-
 <h2>Uluslararası veri aktarımları</h2>
-<p>Google, kütüphanelerinin topladığı verileri Avrupa Ekonomik Alanı dışındaki sunucularda, Amerika Birleşik Devletleri’nde de işleyebilir. Google LLC, <strong>AB-ABD Veri Gizliliği Çerçevesi</strong>’ne (Avrupa Komisyonu’nun 10 Temmuz 2023 tarihli yeterlilik kararı) katılmıştır ve ayrıca Komisyon’un <strong>standart sözleşme maddelerini</strong> kullanır: <a href="https://policies.google.com/privacy/frameworks">policies.google.com/privacy/frameworks</a>. Bize gönderdiğin e-postalar, bir Google hizmeti olan Gmail’de aynı koşullarla saklanır.</p>
+<p>Google LLC bu verileri Amerika Birleşik Devletleri’nde ve başka ülkelerde işleyebilir. Google, <strong>AB-ABD Veri Gizliliği Çerçevesi</strong>’ne (Avrupa Komisyonu’nun 10 Temmuz 2023 tarihli yeterlilik kararı) katılmıştır ve gerektiğinde <strong>standart sözleşme maddelerini</strong> kullanır: <a href="https://policies.google.com/privacy/frameworks">policies.google.com/privacy/frameworks</a>. İletişim e-postası da bir Google hizmetidir (Gmail).</p>
+
+<h2>Hukuki dayanak ve saklama</h2>
+<p><strong>Hukuki dayanak.</strong> Telefonunda işlenenler JR Soft’a ulaşmaz. Telefondan çıkanlar için: (1) AEA, Birleşik Krallık ve İsviçre’de kişiselleştirilmiş reklamlar ve cihaz depolama alanının reklam amacıyla kullanılması: Google formunda verdiğin ya da vermediğin ve <em>Ayarlar → Reklam gizlilik seçenekleri</em> bölümünden geri çekebileceğin <strong>onayın</strong> (GDPR md. 6.1.a ve LSSI-CE md. 22.2); (2) kişiselleştirilmemiş reklamlar, bunların ölçümü ve dolandırıcılığın önlenmesi: ücretsiz bir uygulamayı finanse etme ve dolandırıcılığa karşı koruma konusundaki <strong>meşru menfaat</strong> (GDPR md. 6.1.f); (3) ML Kit’in teknik verileri: tarayıcının ve metin tanımanın çalışması ve hatalarının düzeltilmesi konusundaki <strong>meşru menfaat</strong> (GDPR md. 6.1.f); (4) bize yazarsan (örneğin “Sorun bildir” ile): mesajını yanıtlamak. Google, AdMob ve ML Kit verilerini kendi politikalarıyla <strong>bağımsız veri sorumlusu</strong> olarak işler.</p>
+<p>Telefonunda saklanan veriler, sen onları silene, uygulamayı kaldırana ya da uygulamanın verilerini silene kadar kalır. Bu uygulama, bize gönderdiğin ve artık gerekmediğinde silinen mesajlar dışında telefonunun dışında hiçbir veri saklamaz; Google ise kendi verilerini kendi politikalarına göre saklar.</p>
 
 <h2>Hakların</h2>
 <p>Avrupa Birliği’nde yaşıyorsan GDPR sana erişim, düzeltme, silme, kısıtlama, taşınabilirlik ve itiraz haklarını tanır. Pratikte, bu uygulama telefonun dışında hiçbir verini saklamadığı için:</p>
@@ -145,8 +140,7 @@
 <p>İletişim adresine yazabilir ya da kendi ülkendeki denetim makamına şikâyette bulunabilirsin. İspanya’da bu makam <a href="https://www.aepd.es">Agencia Española de Protección de Datos</a>’tur (İspanya Veri Koruma Ajansı).</p>
 
 <h2>Çocuklar</h2>
-<p>Bu uygulama 13 yaşından küçük çocuklara yönelik değildir ve onlardan bilerek veri toplamaz.</p>
-<p>Avrupa Birliği’nde kişiselleştirilmiş reklamları kendi başına kabul edebilme yaşı ülkeye göre değişir: İspanya’da 14, diğer ülkelerde 16’ya kadar. Bu yaşa ulaşmadıysan annenden, babandan ya da vasinden reklam seçeneklerini senin yerine belirlemesini iste (<em>Ayarlar → Reklam gizlilik seçenekleri</em>).</p>
+<p>Papelario 18 yaş ve üzerindeki kişiler için tasarlanmıştır. Reşit olmayanlardan bilerek veri toplamayız; AdMob ve ML Kit’in gönderdiği teknik veriler yukarıda açıklananlardır.</p>
 
 <h2>Bu politikadaki değişiklikler</h2>
 <p>Bu politika önemli ölçüde değişirse yeni sürüm, farklı bir güncelleme tarihiyle aynı adreste yayımlanır.</p>

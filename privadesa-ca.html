@@ -44,7 +44,7 @@
 <ul>
   <li>No hi ha registre, compte, usuari ni contrasenya de l'aplicació. Mai no se't demana un correu, un telèfon, un nom ni la teva ubicació.</li>
   <li><strong>No puja els teus documents.</strong> Les fotos, els PDF, el text reconegut i les teves signatures es processen i es desen al teu telèfon. Aquesta aplicació no té servidors propis.</li>
-  <li>No fa servir eines pròpies d'analítica, d'estadístiques d'ús ni d'informes d'errors (ni Google Analytics, ni Firebase Analytics, ni Crashlytics). Les biblioteques de Google que sí que fa servir envien les seves pròpies dades tècniques, com s'explica més avall.</li>
+  <li>L'aplicació no inclou eines pròpies d'analítica ni d'informes d'errors (ni Google Analytics, ni Firebase Analytics, ni Crashlytics). Les biblioteques de Google sí que envien les seves dades tècniques, explicades més avall.</li>
   <li>No es venen, lloguen ni cedeixen dades a tercers amb finalitats comercials.</li>
   <li>No demana permís per fer servir la càmera, els teus fitxers, els teus contactes ni la teva ubicació. Les fotos les fa l'escàner de documents de Google o la càmera del sistema, i els fitxers s'obren i es desen amb les pantalles del mateix Android, només els que tries.</li>
   <li>Els documents no s'inclouen a la còpia de seguretat d'Android al núvol de Google.</li>
@@ -76,20 +76,20 @@
   <li><strong>Targetes de visita.</strong> «Afegeix als contactes» obre l'aplicació de contactes del telèfon amb les dades ja emplenades; ets tu qui les desa.</li>
   <li><strong>Porta-retalls.</strong> L'aplicació copia el text al porta-retalls només quan tu ho demanes.</li>
   <li><strong>Llegir en veu alta.</strong> El text es llegeix amb una veu de l'idioma baixada al teu telèfon, que funciona sense connexió: no surt del mòbil. Si no en tens cap, l'aplicació no el llegeix i t'indica com baixar-la a la configuració d'Android.</li>
-  <li><strong>Informa d'un error.</strong> Obre la teva aplicació de correu amb un missatge que inclou la versió i l'idioma de l'aplicació, el model del telèfon, la versió d'Android i el tipus dels últims errors (sense cap document ni text teu). Només s'envia si tu l'envies. JR Soft fa servir aquest missatge i la teva adreça de correu només per estudiar l'error i respondre't; no els comparteix amb ningú i els esborra quan l'assumpte queda resolt, com a màxim al cap d'un any.</li>
+  <li><strong>Informa d'un error.</strong> Obre la teva aplicació de correu amb un missatge que inclou la versió de l'aplicació, el model del telèfon, la versió d'Android, l'idioma de l'aplicació i el tipus dels últims errors (sense cap document ni text teu). Només s'envia si tu l'envies. Si ens l'envies, rebem la teva adreça de correu i aquest text; els fem servir només per respondre't i resoldre l'error, i esborrem el missatge quan ja no cal.</li>
 </ul>
 
 <h2>Dades que sí que surten del telèfon</h2>
 
 <h3>Escàner i reconeixement de text: Google ML Kit</h3>
-<p>Les fotos es fan amb l'<strong>escàner de documents de Google</strong> i el text es reconeix amb <strong>ML Kit</strong>, biblioteques de Google que funcionen dins del telèfon a través dels serveis de Google Play (que en baixen els models el primer cop). <strong>Ni les imatges ni el text dels teus documents no s'envien a Google.</strong> El que sí que envia ML Kit a Google són dades tècniques del seu funcionament: marca, model i versió del sistema del telèfon, versió de l'aplicació, un identificador aleatori de la instal·lació i un identificador del dispositiu per a diagnòstic (que, segons Google, no es fan servir per identificar-te), temps de resposta i codis d'error. Google les fa servir per diagnosticar i millorar aquestes biblioteques.</p>
+<p>Les fotos es fan amb l'<strong>escàner de documents de Google</strong> i el text es reconeix amb <strong>ML Kit</strong>, biblioteques de Google que funcionen dins del telèfon a través dels serveis de Google Play (que en baixen els models el primer cop). <strong>Ni les imatges ni el text dels teus documents no s'envien a Google.</strong> El que sí que envia ML Kit a Google són dades tècniques del seu funcionament: marca, model i versió del sistema del telèfon, versió de l'aplicació, un identificador del dispositiu i un altre de la instal·lació (aquest últim, segons Google, no pensat per identificar-te a tu ni el teu telèfon), la configuració i la mida del que es processa (no el seu contingut), temps de resposta i codis d'error. Google les fa servir per a diagnòstic i estadístiques d'ús d'aquestes biblioteques.</p>
 <p>El text en àrab i en rus es reconeix amb <strong>Tesseract</strong>, una biblioteca de codi obert que va dins de l'aplicació i no es connecta a internet.</p>
 
 <h3>Publicitat: Google AdMob</h3>
 <p>L'aplicació és gratuïta i es manté amb anuncis discrets de Google AdMob, que només apareixen a la biblioteca i a la pantalla «Document desat»: mai a la càmera, mentre edites ni a pantalla completa. Les peticions d'anuncis no porten res dels teus documents ni del seu text.</p>
 <p>Com qualsevol aplicació amb AdMob, l'SDK de Google recull l'<strong>identificador de publicitat</strong> d'Android (el pots restablir o esborrar a <em>Configuració d'Android → Google → Anuncis</em>), l'identificador del conjunt d'aplicacions (<em>app set ID</em>), la teva adreça IP (de la qual es dedueix una ubicació aproximada), les interaccions amb l'aplicació i amb els anuncis i dades de diagnòstic. Google les fa servir per servir i mesurar la publicitat, per a estadístiques i per prevenir fraus, segons la seva pròpia política.</p>
-<p>A l'Espai Econòmic Europeu, al Regne Unit i a Suïssa, l'aplicació mostra el formulari de consentiment de Google abans de servir publicitat personalitzada. Pots canviar la teva elecció quan vulguis a <em>Opcions → Opcions de privadesa dels anuncis</em>. Si ho rebutges, veuràs publicitat no personalitzada (o limitada, sense identificadors per a publicitat ni perfils) i l'aplicació funciona exactament igual.</p>
-<p>Com fa servir Google les dades quan utilitzes aplicacions que fan servir els seus serveis: <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</p>
+<p>A l'Espai Econòmic Europeu, al Regne Unit i a Suïssa, l'aplicació mostra el formulari de consentiment de Google abans de servir publicitat personalitzada. Pots canviar la teva elecció quan vulguis a <em>Opcions → Opcions de privadesa dels anuncis</em>. Si ho rebutges, veuràs publicitat no personalitzada (o limitada, sense identificadors, si tampoc no acceptes l'ús de l'emmagatzematge) i l'aplicació funciona exactament igual.</p>
+<p>Com fa servir Google la informació de les aplicacions que utilitzen els seus serveis: <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</p>
 
 <h3>Valoracions i Google Play</h3>
 <p>De tant en tant, després de fer-la servir amb èxit, l'aplicació et pot demanar una valoració amb la finestra oficial de Google Play, que gestiona Google. «Valora l'aplicació» i «Més aplicacions de JR Soft» obren Google Play.</p>
@@ -122,17 +122,12 @@
   </tr>
 </table>
 
-<h2>Base legal i conservació</h2>
-<ul>
-  <li><strong>Publicitat personalitzada</strong> a l'Espai Econòmic Europeu, al Regne Unit i a Suïssa: el teu <strong>consentiment</strong>, que dones o denegues al formulari de Google i pots retirar quan vulguis a <em>Opcions → Opcions de privadesa dels anuncis</em>.</li>
-  <li><strong>Publicitat no personalitzada o limitada, prevenció del frau i dades tècniques d'ML Kit</strong>: l'<strong>interès legítim</strong> a mantenir l'aplicació gratuïta, protegir-la del frau i aconseguir que l'escàner i el reconeixement de text funcionin bé. T'hi pots oposar escrivint a l'adreça de contacte.</li>
-  <li><strong>Els correus que ens envies</strong> (per exemple, «Informa d'un error»): atendre la teva petició.</li>
-</ul>
-<p>Per a les dades que recullen les seves biblioteques (AdMob i ML Kit), <strong>Google actua com a responsable independent</strong> del tractament, amb les seves pròpies condicions i la seva política de privadesa.</p>
-<p>Les dades que es desen al teu telèfon hi romanen fins que les esborris, desinstal·lis l'aplicació o n'esborris les dades. Aquesta aplicació no conserva cap dada fora del teu telèfon, tret dels correus que ens envies; Google conserva les seves segons les seves polítiques.</p>
-
 <h2>Transferències internacionals</h2>
-<p>Google pot tractar les dades que recullen les seves biblioteques en servidors de fora de l'Espai Econòmic Europeu, també als Estats Units. Google LLC està adherida al <strong>Marc de privadesa de dades UE-EUA</strong> (decisió d'adequació de la Comissió Europea de 10 de juliol de 2023) i, a més, fa servir les <strong>clàusules contractuals tipus</strong> de la Comissió: <a href="https://policies.google.com/privacy/frameworks">policies.google.com/privacy/frameworks</a>. Els correus que ens envies es desen a Gmail, un servei de Google, en aquestes mateixes condicions.</p>
+<p>Google LLC pot tractar aquestes dades als Estats Units i en altres països. Google està adherit al <strong>Marc de privadesa de dades UE-EUA</strong> (decisió d'adequació de la Comissió Europea de 10 de juliol de 2023) i fa servir <strong>clàusules contractuals tipus</strong> quan calen: <a href="https://policies.google.com/privacy/frameworks">policies.google.com/privacy/frameworks</a>. L'adreça de correu de contacte també fa servir un servei de Google (Gmail).</p>
+
+<h2>Base legal i conservació</h2>
+<p><strong>Base jurídica.</strong> El que es processa al teu telèfon no arriba a JR Soft. Per al que sí que en surt: (1) publicitat personalitzada i ús de l'emmagatzematge del dispositiu amb finalitats publicitàries a l'EEE, al Regne Unit i a Suïssa: el teu <strong>consentiment</strong>, que dones o denegues al formulari de Google i pots retirar a <em>Opcions → Opcions de privadesa dels anuncis</em> (art. 6.1.a RGPD i art. 22.2 LSSI-CE); (2) publicitat no personalitzada, el seu mesurament i la prevenció del frau: l'<strong>interès legítim</strong> a finançar una aplicació gratuïta i protegir-la del frau (art. 6.1.f RGPD); (3) dades tècniques d'ML Kit: l'<strong>interès legítim</strong> que l'escàner i el reconeixement de text funcionin i se'n corregeixin els errors (art. 6.1.f RGPD); (4) si ens escrius (per exemple amb «Informa d'un error»): atendre el teu missatge. Google tracta les dades d'AdMob i d'ML Kit com a <strong>responsable independent</strong>, amb les seves pròpies polítiques.</p>
+<p>Les dades que es desen al teu telèfon hi romanen fins que les esborris, desinstal·lis l'aplicació o n'esborris les dades. Aquesta aplicació no conserva cap dada fora del teu telèfon, tret dels missatges que ens envies, que s'esborren quan ja no calen; Google conserva les seves segons les seves polítiques.</p>
 
 <h2>Els teus drets</h2>
 <p>Si resideixes a la Unió Europea, el RGPD et reconeix els drets d'accés, rectificació, supressió, limitació, portabilitat i oposició. A la pràctica, i atès que aquesta aplicació no desa cap dada teva fora del telèfon:</p>
@@ -145,8 +140,7 @@
 <p>També pots escriure a l'adreça de contacte o presentar una reclamació davant l'autoritat de control del teu país. A Espanya és l'<a href="https://www.aepd.es">Agencia Española de Protección de Datos</a>.</p>
 
 <h2>Menors</h2>
-<p>Aquesta aplicació no està adreçada a menors de 13 anys i no en recull dades conscientment.</p>
-<p>A la Unió Europea, l'edat per acceptar tu mateix la publicitat personalitzada depèn del país: 14 anys a Espanya i fins a 16 en altres. Si encara no la tens, demana a la teva mare, al teu pare o a qui sigui el teu tutor que triï les opcions dels anuncis per tu (<em>Opcions → Opcions de privadesa dels anuncis</em>).</p>
+<p>Papelario està pensada per a majors de 18 anys. No recollim conscientment dades de menors; les dades tècniques que envien AdMob i ML Kit són les descrites més amunt.</p>
 
 <h2>Canvis en aquesta política</h2>
 <p>Si aquesta política canvia de manera substancial, es publicarà la versió nova en aquesta mateixa adreça amb una data d'actualització diferent.</p>

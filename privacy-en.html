@@ -44,7 +44,7 @@
 <ul>
   <li>There is no sign-up, account, username or password for the app. You are never asked for an email address, a phone number, a name or your location.</li>
   <li><strong>It does not upload your documents.</strong> Photos, PDFs, recognized text and your signatures are processed and stored on your phone. This app has no servers of its own.</li>
-  <li>It uses no analytics, usage-statistics or crash-reporting tools of its own (no Google Analytics, no Firebase Analytics and no Crashlytics). The Google libraries it does use send their own technical data, as explained below.</li>
+  <li>The app includes no analytics or crash-reporting tools of its own (no Google Analytics, no Firebase Analytics and no Crashlytics). Google's libraries do send their technical data, explained below.</li>
   <li>No data is sold, rented or shared with third parties for commercial purposes.</li>
   <li>It does not ask for permission to use the camera, your files, your contacts or your location. Photos are taken by Google's document scanner or the system camera, and files are opened and saved through Android's own screens, only the ones you choose.</li>
   <li>Documents are not included in Android's backup to Google's cloud.</li>
@@ -76,20 +76,20 @@
   <li><strong>Business cards.</strong> “Add to contacts” opens the phone's contacts app with the details already filled in; you are the one who saves them.</li>
   <li><strong>Clipboard.</strong> The app copies text to the clipboard only when you ask it to.</li>
   <li><strong>Read aloud.</strong> The text is read with a voice for that language downloaded to your phone, which works offline: the text does not leave your phone. If you don't have one, the app does not read the text and tells you how to download the voice in Android settings.</li>
-  <li><strong>Report a problem.</strong> It opens your email app with a message that includes the app's version and language, the phone model, the Android version and the type of the latest errors (without any of your documents or text). It is only sent if you send it. JR Soft uses that message and your email address only to look into the problem and reply to you; it does not share them with anyone and deletes them once the matter is resolved, within one year at the most.</li>
+  <li><strong>Report a problem.</strong> It opens your email app with a message that includes the app version, the phone model, the Android version, the app language and the type of the latest errors (without any of your documents or text). It is only sent if you send it. If you send it to us, we receive your email address and that text; we use them only to reply to you and fix the problem, and we delete the message once it is no longer needed.</li>
 </ul>
 
 <h2>Data that does leave your phone</h2>
 
 <h3>Scanner and text recognition: Google ML Kit</h3>
-<p>Photos are taken with <strong>Google's document scanner</strong> and text is recognized with <strong>ML Kit</strong>, Google libraries that run inside the phone through Google Play services (which download their models the first time). <strong>Neither the images nor the text of your documents are sent to Google.</strong> What ML Kit does send to Google is technical data about how it is working: the phone's make, model and system version, the app version, a random installation identifier and a device identifier for diagnostics (which, according to Google, are not used to identify you), response times and error codes. Google uses this data to diagnose and improve those libraries.</p>
+<p>Photos are taken with <strong>Google's document scanner</strong> and text is recognized with <strong>ML Kit</strong>, Google libraries that run inside the phone through Google Play services (which download their models the first time). <strong>Neither the images nor the text of your documents are sent to Google.</strong> What ML Kit does send to Google is technical data about how it is working: the phone's make, model and system version, the app version, a device identifier and an installation identifier (the latter, according to Google, not intended to identify you or your phone), the configuration and size of what is processed (not its content), response times and error codes. Google uses this data for diagnostics and usage statistics for those libraries.</p>
 <p>Arabic and Russian text is recognized with <strong>Tesseract</strong>, an open-source library that is built into the app and does not connect to the internet.</p>
 
 <h3>Advertising: Google AdMob</h3>
 <p>The app is free and is supported by unobtrusive Google AdMob ads, which only appear in the library and on the “Document saved” screen: never on the camera, while you edit or in full screen. Ad requests carry nothing from your documents or their text.</p>
 <p>As with any app that uses AdMob, Google's SDK collects the Android <strong>advertising identifier</strong> (you can reset or delete it in <em>Android Settings → Google → Ads</em>), the app set identifier (<em>app set ID</em>), your IP address (from which an approximate location is inferred), your interactions with the app and with the ads, and diagnostic data. Google uses this data to serve and measure advertising, for statistics and to prevent fraud, under its own policy.</p>
-<p>In the European Economic Area, the United Kingdom and Switzerland, the app shows Google's consent form before serving personalized advertising. You can change your choice at any time in <em>Settings → Ad privacy options</em>. If you decline, you will see non-personalized advertising (or limited advertising, with no advertising identifiers and no profiles) and the app works exactly the same.</p>
-<p>How Google uses data when you use apps that use its services: <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</p>
+<p>In the European Economic Area, the United Kingdom and Switzerland, the app shows Google's consent form before serving personalized advertising. You can change your choice at any time in <em>Settings → Ad privacy options</em>. If you decline, you will see non-personalized advertising (or limited advertising, without identifiers, if you also decline the use of device storage) and the app works exactly the same.</p>
+<p>How Google uses information from apps that use its services: <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</p>
 
 <h3>Ratings and Google Play</h3>
 <p>Every now and then, after you have used it successfully, the app may ask you for a rating through Google Play's official window, which is managed by Google. “Rate the app” and “More apps by JR Soft” open Google Play.</p>
@@ -122,17 +122,12 @@
   </tr>
 </table>
 
-<h2>Legal basis and retention</h2>
-<ul>
-  <li><strong>Personalized advertising</strong> in the European Economic Area, the United Kingdom and Switzerland: your <strong>consent</strong>, which you give or refuse in Google's form and can withdraw at any time in <em>Settings → Ad privacy options</em>.</li>
-  <li><strong>Non-personalized or limited advertising, fraud prevention and ML Kit technical data</strong>: the <strong>legitimate interest</strong> in keeping the app free, protecting it from fraud and making the scanner and text recognition work properly. You can object by writing to the contact address.</li>
-  <li><strong>The emails you send us</strong> (for example, “Report a problem”): dealing with your request.</li>
-</ul>
-<p>For the data collected by its libraries (AdMob and ML Kit), <strong>Google acts as an independent controller</strong>, under its own terms and its own privacy policy.</p>
-<p>Data stored on your phone remains there until you delete it, uninstall the app or clear its data. This app keeps no data outside your phone, except the emails you send us; Google keeps its own data according to its policies.</p>
-
 <h2>International transfers</h2>
-<p>Google may process the data collected by its libraries on servers outside the European Economic Area, including in the United States. Google LLC participates in the <strong>EU-U.S. Data Privacy Framework</strong> (European Commission adequacy decision of 10 July 2023) and also uses the Commission's <strong>standard contractual clauses</strong>: <a href="https://policies.google.com/privacy/frameworks">policies.google.com/privacy/frameworks</a>. The emails you send us are stored in Gmail, a Google service, under those same conditions.</p>
+<p>Google LLC may process this data in the United States and other countries. Google participates in the <strong>EU-U.S. Data Privacy Framework</strong> (European Commission adequacy decision of 10 July 2023) and uses <strong>standard contractual clauses</strong> where they are needed: <a href="https://policies.google.com/privacy/frameworks">policies.google.com/privacy/frameworks</a>. The contact email address also uses a Google service (Gmail).</p>
+
+<h2>Legal basis and retention</h2>
+<p><strong>Legal basis.</strong> What is processed on your phone does not reach JR Soft. For what does leave it: (1) personalized advertising and the use of device storage for advertising purposes in the EEA, the United Kingdom and Switzerland: your <strong>consent</strong>, which you give or refuse in Google's form and can withdraw in <em>Settings → Ad privacy options</em> (Art. 6.1.a GDPR and Art. 22.2 LSSI-CE); (2) non-personalized advertising, its measurement and fraud prevention: the <strong>legitimate interest</strong> in funding a free app and protecting it from fraud (Art. 6.1.f GDPR); (3) ML Kit technical data: the <strong>legitimate interest</strong> in the scanner and text recognition working and their errors being fixed (Art. 6.1.f GDPR); (4) if you write to us (for example with “Report a problem”): dealing with your message. Google processes the AdMob and ML Kit data as an <strong>independent controller</strong>, under its own policies.</p>
+<p>Data stored on your phone remains there until you delete it, uninstall the app or clear its data. This app keeps no data outside your phone, except the messages you send us, which are deleted once they are no longer needed; Google keeps its own data according to its policies.</p>
 
 <h2>Your rights</h2>
 <p>If you live in the European Union, the GDPR grants you rights of access, rectification, erasure, restriction, portability and objection. In practice, and given that this app keeps none of your data outside your phone:</p>
@@ -145,8 +140,7 @@
 <p>You can also write to the contact address or lodge a complaint with your country's supervisory authority. In Spain this is the <a href="https://www.aepd.es">Agencia Española de Protección de Datos</a>.</p>
 
 <h2>Children</h2>
-<p>This app is not directed at children under 13 and does not knowingly collect data from them.</p>
-<p>In the European Union, the age at which you can accept personalized advertising yourself depends on the country: 14 in Spain and up to 16 in others. If you are younger, ask your mother, your father or your guardian to choose the ad options for you (<em>Settings → Ad privacy options</em>).</p>
+<p>Papelario is intended for people aged 18 and over. We do not knowingly collect data from minors; the technical data sent by AdMob and ML Kit is the data described above.</p>
 
 <h2>Changes to this policy</h2>
 <p>If this policy changes substantially, the new version will be published at this same address with a different update date.</p>
