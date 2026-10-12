@@ -44,7 +44,7 @@
 <ul>
   <li>Não há cadastro, conta, nome de usuário nem senha do aplicativo. Nunca é pedido a você um e-mail, um telefone, um nome nem a sua localização.</li>
   <li><strong>Não envia os seus documentos para lugar nenhum.</strong> As fotos, os PDFs, o texto reconhecido e as suas assinaturas são processados e salvos no seu telefone. Este aplicativo não tem servidores próprios.</li>
-  <li>Não é usada nenhuma ferramenta de análise nem de estatísticas de uso: nem Google Analytics, nem Firebase Analytics, nem serviços de relatórios de falhas.</li>
+  <li>Não usa ferramentas próprias de análise, de estatísticas de uso nem de relatórios de falhas (nem Google Analytics, nem Firebase Analytics, nem Crashlytics). As bibliotecas do Google que o aplicativo usa enviam os próprios dados técnicos, como se explica mais abaixo.</li>
   <li>Não são vendidos, alugados nem cedidos dados a terceiros para fins comerciais.</li>
   <li>Não pede permissão para usar a câmera, os seus arquivos, os seus contatos nem a sua localização. As fotos são tiradas pelo scanner de documentos do Google ou pela câmera do sistema, e os arquivos são abertos e salvos pelas telas do próprio Android, só os que você escolher.</li>
   <li>Os documentos não são incluídos no backup do Android na nuvem do Google.</li>
@@ -75,20 +75,21 @@
   <li><strong>Backup.</strong> É salvo como um arquivo onde você escolher. Se você colocar uma senha, ele vai criptografado (AES-256) e ninguém consegue abri-lo sem ela: se você esquecer a senha, não há como recuperá-la, nem mesmo para nós.</li>
   <li><strong>Cartões de visita.</strong> “Adicionar aos contatos” abre o aplicativo de contatos do telefone com os dados já preenchidos; é você quem os salva.</li>
   <li><strong>Área de transferência.</strong> O aplicativo copia o texto para a área de transferência apenas quando você pede.</li>
-  <li><strong>Ler em voz alta.</strong> O texto é lido com o mecanismo de voz configurado no seu telefone. Se esse mecanismo usar vozes on-line, o texto é processado pelo fornecedor dele, de acordo com as condições dele.</li>
-  <li><strong>Relatar um problema.</strong> Abre o seu aplicativo de e-mail com uma mensagem que inclui a versão do aplicativo, o modelo do telefone, a versão do Android e o tipo das últimas falhas (sem nenhum documento nem texto seu). Só é enviada se você mesmo enviá-la.</li>
+  <li><strong>Ler em voz alta.</strong> O texto é lido com uma voz do idioma baixada no seu telefone, que funciona sem conexão: ele não sai do celular. Se você não tiver essa voz, o aplicativo não lê o texto e mostra como baixá-la nas configurações do Android.</li>
+  <li><strong>Relatar um problema.</strong> Abre o seu aplicativo de e-mail com uma mensagem que inclui a versão e o idioma do aplicativo, o modelo do telefone, a versão do Android e o tipo das últimas falhas (sem nenhum documento nem texto seu). Só é enviada se você mesmo enviá-la. A JR Soft usa esse e-mail e o seu endereço apenas para analisar a falha e responder a você; não os compartilha com ninguém e os apaga quando o assunto é resolvido, no máximo depois de um ano.</li>
 </ul>
 
 <h2>Dados que saem do telefone</h2>
 
 <h3>Scanner e reconhecimento de texto: Google ML Kit</h3>
-<p>As fotos são tiradas com o <strong>scanner de documentos do Google</strong> e o texto é reconhecido com o <strong>ML Kit</strong>, bibliotecas do Google que funcionam dentro do telefone por meio dos serviços do Google Play (que baixam os seus modelos na primeira vez). <strong>Nem as imagens nem o texto dos seus documentos são enviados ao Google.</strong> O que o ML Kit de fato envia ao Google são dados técnicos sobre o seu funcionamento: marca, modelo e versão do sistema do telefone, versão do aplicativo, um identificador aleatório da instalação (que, segundo o Google, não foi pensado para identificar você nem o seu telefone), tempos de resposta e códigos de erro. O Google os usa para diagnosticar e melhorar essas bibliotecas.</p>
+<p>As fotos são tiradas com o <strong>scanner de documentos do Google</strong> e o texto é reconhecido com o <strong>ML Kit</strong>, bibliotecas do Google que funcionam dentro do telefone por meio dos serviços do Google Play (que baixam os seus modelos na primeira vez). <strong>Nem as imagens nem o texto dos seus documentos são enviados ao Google.</strong> O que o ML Kit de fato envia ao Google são dados técnicos sobre o seu funcionamento: marca, modelo e versão do sistema do telefone, versão do aplicativo, um identificador aleatório da instalação e um identificador do dispositivo para diagnóstico (que, segundo o Google, não são usados para identificar você), tempos de resposta e códigos de erro. O Google os usa para diagnosticar e melhorar essas bibliotecas.</p>
 <p>O texto em árabe e em russo é reconhecido com o <strong>Tesseract</strong>, uma biblioteca de código aberto que vem dentro do aplicativo e não se conecta à internet.</p>
 
 <h3>Publicidade: Google AdMob</h3>
 <p>O aplicativo é gratuito e se mantém com anúncios discretos do Google AdMob, que só aparecem na biblioteca e na tela “Documento salvo”: nunca na câmera, enquanto você edita nem em tela cheia. As solicitações de anúncios não levam nada dos seus documentos nem do texto deles.</p>
 <p>Como qualquer aplicativo com AdMob, o SDK do Google coleta o <strong>identificador de publicidade</strong> do Android (você pode redefini-lo ou excluí-lo em <em>Configurações do Android → Google → Anúncios</em>), o identificador do conjunto de apps (<em>app set ID</em>), o seu endereço IP (do qual se deduz uma localização aproximada), as interações com o aplicativo e com os anúncios e dados de diagnóstico. O Google os usa para exibir e medir a publicidade, para estatísticas e para prevenir fraudes, de acordo com a política dele.</p>
-<p>No Espaço Econômico Europeu, no Reino Unido e na Suíça, o aplicativo mostra o formulário de consentimento do Google antes de exibir publicidade personalizada. Você pode mudar a sua escolha quando quiser em <em>Ajustes → Opções de privacidade dos anúncios</em>. Se recusar, você verá publicidade não personalizada e o aplicativo funciona exatamente igual.</p>
+<p>No Espaço Econômico Europeu, no Reino Unido e na Suíça, o aplicativo mostra o formulário de consentimento do Google antes de exibir publicidade personalizada. Você pode mudar a sua escolha quando quiser em <em>Ajustes → Opções de privacidade dos anúncios</em>. Se recusar, você verá publicidade não personalizada (ou limitada, sem identificadores de publicidade nem perfis) e o aplicativo funciona exatamente igual.</p>
+<p>Como o Google usa os dados quando você usa aplicativos que usam os serviços dele: <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</p>
 
 <h3>Avaliações e Google Play</h3>
 <p>De vez em quando, depois de você usá-lo com sucesso, o aplicativo pode pedir uma avaliação com a janela oficial do Google Play, gerenciada pelo Google. “Avaliar o app” e “Mais apps da JR Soft” abrem o Google Play.</p>
@@ -122,8 +123,16 @@
 </table>
 
 <h2>Base legal e conservação</h2>
-<p>O tratamento se baseia no seu <strong>consentimento</strong>, que você dá ao usar as funções do aplicativo e, para a publicidade personalizada, por meio do formulário do Google, e que pode retirar quando quiser no próprio aplicativo ou nas configurações do Android.</p>
-<p>Os dados guardados no seu telefone permanecem até você apagá-los, desinstalar o aplicativo ou apagar os dados dele. Este aplicativo não conserva nenhum dado fora do seu telefone; o Google conserva os próprios dados de acordo com as políticas dele.</p>
+<ul>
+  <li><strong>Publicidade personalizada</strong> no Espaço Econômico Europeu, no Reino Unido e na Suíça: o seu <strong>consentimento</strong>, que você dá ou nega no formulário do Google e pode retirar quando quiser em <em>Ajustes → Opções de privacidade dos anúncios</em>.</li>
+  <li><strong>Publicidade não personalizada ou limitada, prevenção de fraudes e dados técnicos do ML Kit</strong>: o <strong>legítimo interesse</strong> em manter o aplicativo gratuito, protegê-lo contra fraudes e garantir que o scanner e o reconhecimento de texto funcionem bem. Você pode se opor escrevendo para o endereço de contato.</li>
+  <li><strong>Os e-mails que você nos envia</strong> (por exemplo, “Relatar um problema”): atender ao seu pedido.</li>
+</ul>
+<p>Quanto aos dados coletados pelas bibliotecas do Google (AdMob e ML Kit), <strong>o Google atua como controlador independente</strong>, com condições e política de privacidade próprias.</p>
+<p>Os dados guardados no seu telefone permanecem até você apagá-los, desinstalar o aplicativo ou apagar os dados dele. Este aplicativo não conserva nenhum dado fora do seu telefone, exceto os e-mails que você nos envia; o Google conserva os próprios dados de acordo com as políticas dele.</p>
+
+<h2>Transferências internacionais</h2>
+<p>O Google pode tratar os dados coletados pelas bibliotecas dele em servidores fora do Espaço Econômico Europeu, inclusive nos Estados Unidos. A Google LLC aderiu ao <strong>Quadro de Privacidade de Dados UE-EUA</strong> (decisão de adequação da Comissão Europeia de 10 de julho de 2023) e usa, além disso, as <strong>cláusulas contratuais padrão</strong> da Comissão: <a href="https://policies.google.com/privacy/frameworks">policies.google.com/privacy/frameworks</a>. Os e-mails que você nos envia são guardados no Gmail, um serviço do Google, nessas mesmas condições.</p>
 
 <h2>Os seus direitos</h2>
 <p>Se você reside na União Europeia, o RGPD reconhece a você os direitos de acesso, retificação, apagamento, limitação, portabilidade e oposição. Na prática, e como este aplicativo não guarda nenhum dado seu fora do telefone:</p>
@@ -137,6 +146,7 @@
 
 <h2>Menores</h2>
 <p>Este aplicativo não é destinado a menores de 13 anos e não coleta conscientemente dados deles.</p>
+<p>Na União Europeia, a idade para aceitar por conta própria a publicidade personalizada depende do país: 14 anos na Espanha e até 16 em outros. Se você ainda não tiver essa idade, peça à sua mãe, ao seu pai ou ao seu responsável legal que escolha as opções dos anúncios por você (<em>Ajustes → Opções de privacidade dos anúncios</em>).</p>
 
 <h2>Alterações nesta política</h2>
 <p>Se esta política mudar de forma substancial, a nova versão será publicada neste mesmo endereço com uma data de atualização diferente.</p>

@@ -25,6 +25,7 @@
   th { font-weight: 600; }
   code { background: rgba(127,127,127,.15); padding: .1rem .3rem; border-radius: 3px; font-size: .9em; }
   footer { margin-top: 3rem; font-size: .9rem; opacity: .75; }
+  pre { white-space: pre-wrap; font-size: .8rem; background: var(--suave, #f6f0f4); padding: .8rem 1rem; border-radius: 8px; overflow-x: auto; }
 </style>
 </head>
 <body>
@@ -48,7 +49,9 @@ licences.</em></p>
   <tr><td><a href="http://www.leptonica.org">Leptonica</a></td><td>Imágenes, dentro de Tesseract</td><td>BSD de 2 cláusulas</td></tr>
   <tr><td>libjpeg (Independent JPEG Group)</td><td>JPEG, dentro de Tesseract</td><td>Licencia de IJG</td></tr>
   <tr><td>libpng</td><td>PNG, dentro de Tesseract</td><td>Licencia de libpng</td></tr>
-  <tr><td><a href="https://github.com/TomRoush/PdfBox-Android">PdfBox-Android</a> (Apache PDFBox)</td><td>Contraseña, unir y dividir PDF</td><td>Apache 2.0</td></tr>
+  <tr><td><a href="https://github.com/TomRoush/PdfBox-Android">PdfBox-Android</a> (Apache PDFBox)</td><td>Contraseña, unir y dividir PDF</td><td>Apache 2.0 (con sus avisos NOTICE, abajo)</td></tr>
+  <tr><td>Adobe Glyph List e ITC Zapf Dingbats Glyph List</td><td>Nombres de los caracteres, dentro de PdfBox</td><td>BSD de 3 cláusulas de Adobe (abajo)</td></tr>
+  <tr><td>Unicode Character Database (<code>Scripts.txt</code>)</td><td>Escrituras de los caracteres, dentro de PdfBox</td><td>Unicode License v3 (abajo)</td></tr>
   <tr><td><a href="https://www.bouncycastle.org">Bouncy Castle</a></td><td>Cifrado, dentro de PdfBox</td><td>MIT</td></tr>
   <tr><td><a href="https://pub.dev/packages/pdf">pdf</a></td><td>Crear los PDF con su capa de texto</td><td>Apache 2.0</td></tr>
 </table>
@@ -67,10 +70,144 @@ licences.</em></p>
   <tr><td>google_mobile_ads (el complemento de Flutter)</td><td>Apache 2.0</td></tr>
   <tr><td>firebase_core, firebase_remote_config (los complementos)</td><td>BSD de 3 cláusulas</td></tr>
   <tr><td>AndroidX (Jetpack)</td><td>Apache 2.0</td></tr>
+  <tr><td>Biblioteca estándar de Kotlin</td><td>Apache 2.0</td></tr>
 </table>
 <p>La fuente invisible de la capa de texto de los PDF la genera la propia aplicación
 (<code>tools/build_glyphless_font.py</code>), con la idea de la «GlyphLessFont» de Tesseract.</p>
 
+<h2>Avisos de copyright</h2>
+<ul>
+  <li>Tesseract OCR: Copyright Google Inc. y los colaboradores de Tesseract.</li>
+  <li>Tesseract4Android: Copyright 2019 Adaptech s.r.o., Robert Pösel.</li>
+  <li>tessdata_fast: Copyright Google Inc.</li>
+  <li>PdfBox-Android: Copyright Tom Roush y colaboradores.</li>
+  <li>AndroidX: Copyright The Android Open Source Project.</li>
+  <li>Biblioteca estándar de Kotlin: Copyright JetBrains s.r.o. y los colaboradores del lenguaje Kotlin.</li>
+</ul>
+<h2>NOTICE de PdfBox-Android</h2>
+<pre>Apache PDFBox
+Copyright 2014 The Apache Software Foundation
+
+This product includes software developed at
+The Apache Software Foundation (http://www.apache.org/).
+
+Based on source code originally developed in the PDFBox and
+FontBox projects.
+
+Copyright (c) 2002-2007, www.pdfbox.org
+
+Based on source code originally developed in the PaDaF project.
+Copyright (c) 2010 Atos Worldline SAS
+
+Includes the Adobe Glyph List
+Copyright 1997, 1998, 2002, 2007, 2010 Adobe Systems Incorporated.
+
+Includes the Zapf Dingbats Glyph List
+Copyright 2002, 2010 Adobe Systems Incorporated.
+
+Includes the Script Property (Scripts-10.0.0.txt)
+Copyright 2017 Unicode, Inc.</pre>
+<h2>NOTICE de Apache PDFBox</h2>
+<pre>Apache PDFBox
+Copyright 2014 The Apache Software Foundation
+
+This product includes software developed at
+The Apache Software Foundation (http://www.apache.org/).
+
+Based on source code originally developed in the PDFBox and
+FontBox projects.
+
+Copyright (c) 2002-2007, www.pdfbox.org
+
+Based on source code originally developed in the PaDaF project.
+Copyright (c) 2010 Atos Worldline SAS
+
+Includes the Adobe Glyph List
+Copyright 1997, 1998, 2002, 2007, 2010 Adobe Systems Incorporated.
+
+Includes the Zapf Dingbats Glyph List
+Copyright 2002, 2010 Adobe Systems Incorporated.
+
+Includes OSXAdapter
+Copyright (C) 2003-2007 Apple, Inc., All Rights Reserved</pre>
+<h2>Adobe Glyph List</h2>
+<pre>Adobe Glyph List and ITC Zapf Dingbats Glyph List
+Copyright 1997, 1998, 2002, 2007, 2010 Adobe Systems Incorporated.
+Copyright 2002, 2010 Adobe Systems Incorporated.
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or
+without modification, are permitted provided that the
+following conditions are met:
+
+Redistributions of source code must retain the above
+copyright notice, this list of conditions and the following
+disclaimer.
+
+Redistributions in binary form must reproduce the above
+copyright notice, this list of conditions and the following
+disclaimer in the documentation and/or other materials
+provided with the distribution.
+
+Neither the name of Adobe Systems Incorporated nor the names
+of its contributors may be used to endorse or promote
+products derived from this software without specific prior
+written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND
+CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES,
+INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR
+CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</pre>
+<h2>Unicode License v3</h2>
+<p><code>Scripts-10.0.0.txt</code>: © 2017 Unicode®, Inc.</p>
+<pre>UNICODE LICENSE V3
+
+COPYRIGHT AND PERMISSION NOTICE
+
+Copyright © 1991-2026 Unicode, Inc.
+
+NOTICE TO USER: Carefully read the following legal agreement. BY
+DOWNLOADING, INSTALLING, COPYING OR OTHERWISE USING DATA FILES, AND/OR
+SOFTWARE, YOU UNEQUIVOCALLY ACCEPT, AND AGREE TO BE BOUND BY, ALL OF THE
+TERMS AND CONDITIONS OF THIS AGREEMENT. IF YOU DO NOT AGREE, DO NOT
+DOWNLOAD, INSTALL, COPY, DISTRIBUTE OR USE THE DATA FILES OR SOFTWARE.
+
+Permission is hereby granted, free of charge, to any person obtaining a
+copy of data files and any associated documentation (the &quot;Data Files&quot;) or
+software and any associated documentation (the &quot;Software&quot;) to deal in the
+Data Files or Software without restriction, including without limitation
+the rights to use, copy, modify, merge, publish, distribute, and/or sell
+copies of the Data Files or Software, and to permit persons to whom the
+Data Files or Software are furnished to do so, provided that either (a)
+this copyright and permission notice appear with all copies of the Data
+Files or Software, or (b) this copyright and permission notice appear in
+associated Documentation.
+
+THE DATA FILES AND SOFTWARE ARE PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY
+KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF
+THIRD PARTY RIGHTS.
+
+IN NO EVENT SHALL THE COPYRIGHT HOLDER OR HOLDERS INCLUDED IN THIS NOTICE
+BE LIABLE FOR ANY CLAIM, OR ANY SPECIAL INDIRECT OR CONSEQUENTIAL DAMAGES,
+OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS,
+WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION,
+ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THE DATA
+FILES OR SOFTWARE.
+
+Except as contained in this notice, the name of a copyright holder shall
+not be used in advertising or otherwise to promote the sale, use or other
+dealings in these Data Files or Software without prior written
+authorization of the copyright holder.</pre>
 <h2>Servicios de Google (no son de código abierto)</h2>
 <p>El escáner de documentos y el reconocimiento de texto de <strong>Google ML Kit</strong>,
 los <strong>servicios de Google Play</strong> y el <strong>SDK de Google Mobile Ads</strong>

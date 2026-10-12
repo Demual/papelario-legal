@@ -44,7 +44,7 @@
 <ul>
   <li>Il n'y a ni inscription, ni compte, ni identifiant, ni mot de passe pour l'application. On ne te demande jamais d'adresse e-mail, de numéro de téléphone, de nom ni ta position.</li>
   <li><strong>Elle n'envoie pas tes documents en ligne.</strong> Les photos, les PDF, le texte reconnu et tes signatures sont traités et enregistrés sur ton téléphone. Cette application n'a pas de serveurs propres.</li>
-  <li>Aucun outil d'analyse ni de statistiques d'utilisation n'est employé : ni Google Analytics, ni Firebase Analytics, ni service de rapports de plantage.</li>
+  <li>Elle n'utilise aucun outil propre d'analyse, de statistiques d'utilisation ni de rapports de plantage (ni Google Analytics, ni Firebase Analytics, ni Crashlytics). Les bibliothèques de Google qu'elle utilise envoient leurs propres données techniques, comme expliqué plus bas.</li>
   <li>Aucune donnée n'est vendue, louée ni cédée à des tiers à des fins commerciales.</li>
   <li>Elle ne demande pas l'autorisation d'utiliser l'appareil photo, tes fichiers, tes contacts ni ta position. Les photos sont prises par le scanner de documents de Google ou par l'appareil photo du système, et les fichiers sont ouverts et enregistrés avec les écrans d'Android lui-même, uniquement ceux que tu choisis.</li>
   <li>Les documents ne sont pas inclus dans la sauvegarde Android sur le cloud de Google.</li>
@@ -75,20 +75,21 @@
   <li><strong>Sauvegarde.</strong> Elle est enregistrée sous forme de fichier à l'endroit de ton choix. Si tu y ajoutes un mot de passe, elle est chiffrée (AES-256) et personne ne peut l'ouvrir sans ce mot de passe : si tu l'oublies, il n'y a aucun moyen de la récupérer, pas même pour nous.</li>
   <li><strong>Cartes de visite.</strong> « Ajouter aux contacts » ouvre l'application de contacts du téléphone avec les données déjà remplies ; c'est toi qui les enregistres.</li>
   <li><strong>Presse-papiers.</strong> L'application ne copie le texte dans le presse-papiers que lorsque tu le demandes.</li>
-  <li><strong>Lire à voix haute.</strong> Le texte est lu par le moteur de synthèse vocale configuré sur ton téléphone. Si ce moteur utilise des voix en ligne, le texte est traité par son fournisseur, selon ses propres conditions.</li>
-  <li><strong>Signaler un problème.</strong> Ouvre ton application de messagerie avec un message qui contient la version de l'application, le modèle du téléphone, la version d'Android et le type des dernières erreurs (sans aucun de tes documents ni de tes textes). Il n'est envoyé que si tu l'envoies toi-même.</li>
+  <li><strong>Lire à voix haute.</strong> Le texte est lu avec une voix téléchargée sur ton téléphone pour cette langue, qui fonctionne hors connexion : il ne quitte pas le téléphone. Si tu n'en as pas, l'application ne le lit pas et t'indique comment télécharger cette voix dans les paramètres d'Android.</li>
+  <li><strong>Signaler un problème.</strong> Ouvre ton application de messagerie avec un message qui contient la version et la langue de l'application, le modèle du téléphone, la version d'Android et le type des dernières erreurs (sans aucun de tes documents ni de tes textes). Il n'est envoyé que si tu l'envoies toi-même. JR Soft utilise ce message et ton adresse e-mail uniquement pour étudier le problème et te répondre ; il ne les communique à personne et les supprime une fois la question réglée, au plus tard au bout d'un an.</li>
 </ul>
 
 <h2>Données qui quittent le téléphone</h2>
 
 <h3>Scanner et reconnaissance de texte : Google ML Kit</h3>
-<p>Les photos sont prises avec le <strong>scanner de documents de Google</strong> et le texte est reconnu avec <strong>ML Kit</strong>, des bibliothèques de Google qui fonctionnent à l'intérieur du téléphone via les services Google Play (qui téléchargent leurs modèles la première fois). <strong>Ni les images ni le texte de tes documents ne sont envoyés à Google.</strong> En revanche, ML Kit envoie à Google des données techniques sur son fonctionnement : marque, modèle et version du système du téléphone, version de l'application, un identifiant aléatoire de l'installation (qui, selon Google, n'est pas destiné à t'identifier, toi ou ton téléphone), temps de réponse et codes d'erreur. Google les utilise pour diagnostiquer et améliorer ces bibliothèques.</p>
+<p>Les photos sont prises avec le <strong>scanner de documents de Google</strong> et le texte est reconnu avec <strong>ML Kit</strong>, des bibliothèques de Google qui fonctionnent à l'intérieur du téléphone via les services Google Play (qui téléchargent leurs modèles la première fois). <strong>Ni les images ni le texte de tes documents ne sont envoyés à Google.</strong> En revanche, ML Kit envoie à Google des données techniques sur son fonctionnement : marque, modèle et version du système du téléphone, version de l'application, un identifiant aléatoire de l'installation et un identifiant de l'appareil à des fins de diagnostic (qui, selon Google, ne servent pas à t'identifier), temps de réponse et codes d'erreur. Google les utilise pour diagnostiquer et améliorer ces bibliothèques.</p>
 <p>Le texte en arabe et en russe est reconnu avec <strong>Tesseract</strong>, une bibliothèque open source intégrée à l'application, qui ne se connecte pas à Internet.</p>
 
 <h3>Publicité : Google AdMob</h3>
 <p>L'application est gratuite et se finance grâce à des annonces discrètes de Google AdMob, qui n'apparaissent que dans la bibliothèque et sur l'écran « Document enregistré » : jamais sur l'appareil photo, pendant que tu modifies un document ni en plein écran. Les demandes d'annonces ne contiennent rien de tes documents ni de leur texte.</p>
 <p>Comme dans toute application avec AdMob, le SDK de Google collecte l'<strong>identifiant publicitaire</strong> d'Android (tu peux le réinitialiser ou le supprimer dans <em>Paramètres d'Android → Google → Annonces</em>), l'identifiant de l'ensemble d'applications (<em>app set ID</em>), ton adresse IP (dont on déduit une position approximative), les interactions avec l'application et avec les annonces, ainsi que des données de diagnostic. Google les utilise pour diffuser et mesurer la publicité, à des fins statistiques et pour prévenir la fraude, selon sa propre politique.</p>
-<p>Dans l'Espace économique européen, au Royaume-Uni et en Suisse, l'application affiche le formulaire de consentement de Google avant de diffuser de la publicité personnalisée. Tu peux modifier ton choix à tout moment dans <em>Réglages → Options de confidentialité des annonces</em>. Si tu refuses, tu verras de la publicité non personnalisée et l'application fonctionne exactement de la même façon.</p>
+<p>Dans l'Espace économique européen, au Royaume-Uni et en Suisse, l'application affiche le formulaire de consentement de Google avant de diffuser de la publicité personnalisée. Tu peux modifier ton choix à tout moment dans <em>Réglages → Options de confidentialité des annonces</em>. Si tu refuses, tu verras de la publicité non personnalisée (ou limitée, sans identifiants publicitaires ni profils) et l'application fonctionne exactement de la même façon.</p>
+<p>Comment Google utilise les données lorsque tu utilises des applications qui font appel à ses services : <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</p>
 
 <h3>Évaluations et Google Play</h3>
 <p>De temps en temps, après une utilisation réussie, l'application peut te demander une évaluation au moyen de la fenêtre officielle de Google Play, gérée par Google. « Noter l'appli » et « Plus d'applis de JR Soft » ouvrent Google Play.</p>
@@ -122,8 +123,16 @@
 </table>
 
 <h2>Base légale et conservation</h2>
-<p>Le traitement repose sur ton <strong>consentement</strong>, que tu donnes en utilisant les fonctions de l'application et, pour la publicité personnalisée, au moyen du formulaire de Google, et que tu peux retirer à tout moment depuis l'application elle-même ou depuis les paramètres d'Android.</p>
-<p>Les données conservées sur ton téléphone y restent jusqu'à ce que tu les effaces, que tu désinstalles l'application ou que tu effaces ses données. Cette application ne conserve aucune donnée en dehors de ton téléphone ; Google conserve les siennes selon ses politiques.</p>
+<ul>
+  <li><strong>Publicité personnalisée</strong> dans l'Espace économique européen, au Royaume-Uni et en Suisse : ton <strong>consentement</strong>, que tu donnes ou refuses dans le formulaire de Google et que tu peux retirer à tout moment dans <em>Réglages → Options de confidentialité des annonces</em>.</li>
+  <li><strong>Publicité non personnalisée ou limitée, prévention de la fraude et données techniques de ML Kit</strong> : l'<strong>intérêt légitime</strong> à maintenir l'application gratuite, à la protéger contre la fraude et à assurer le bon fonctionnement du scanner et de la reconnaissance de texte. Tu peux t'y opposer en écrivant à l'adresse de contact.</li>
+  <li><strong>Les e-mails que tu nous envoies</strong> (par exemple, « Signaler un problème ») : traiter ta demande.</li>
+</ul>
+<p>Pour les données collectées par ses bibliothèques (AdMob et ML Kit), <strong>Google agit en tant que responsable du traitement indépendant</strong>, selon ses propres conditions et sa propre politique de confidentialité.</p>
+<p>Les données conservées sur ton téléphone y restent jusqu'à ce que tu les effaces, que tu désinstalles l'application ou que tu effaces ses données. Cette application ne conserve aucune donnée en dehors de ton téléphone, à l'exception des e-mails que tu nous envoies ; Google conserve les siennes selon ses politiques.</p>
+
+<h2>Transferts internationaux</h2>
+<p>Google peut traiter les données collectées par ses bibliothèques sur des serveurs situés en dehors de l'Espace économique européen, y compris aux États-Unis. Google LLC adhère au <strong>cadre de protection des données UE-États-Unis</strong> (décision d'adéquation de la Commission européenne du 10 juillet 2023) et utilise en outre les <strong>clauses contractuelles types</strong> de la Commission : <a href="https://policies.google.com/privacy/frameworks">policies.google.com/privacy/frameworks</a>. Les e-mails que tu nous envoies sont conservés dans Gmail, un service de Google, dans ces mêmes conditions.</p>
 
 <h2>Tes droits</h2>
 <p>Si tu résides dans l'Union européenne, le RGPD te reconnaît les droits d'accès, de rectification, d'effacement, de limitation, de portabilité et d'opposition. En pratique, et puisque cette application ne conserve aucune donnée te concernant en dehors du téléphone :</p>
@@ -137,6 +146,7 @@
 
 <h2>Mineurs</h2>
 <p>Cette application ne s'adresse pas aux moins de 13 ans et ne collecte pas sciemment de données les concernant.</p>
+<p>Dans l'Union européenne, l'âge à partir duquel tu peux accepter toi-même la publicité personnalisée dépend du pays : 14 ans en Espagne et jusqu'à 16 ans dans d'autres pays. Si tu n'as pas encore cet âge, demande à ta mère, à ton père ou à ton tuteur de choisir les options des annonces pour toi (<em>Réglages → Options de confidentialité des annonces</em>).</p>
 
 <h2>Modifications de cette politique</h2>
 <p>Si cette politique change de manière substantielle, la nouvelle version sera publiée à cette même adresse avec une date de mise à jour différente.</p>
