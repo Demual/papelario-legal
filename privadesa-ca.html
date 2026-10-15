@@ -31,7 +31,7 @@
 <body>
 
 <h1>Política de privadesa</h1>
-<p class="fecha">Aplicació <strong>Papelario</strong> (<code>com.jrsoft.escanerdocumentos</code>) · Darrera actualització: 12 d'octubre de 2026</p>
+<p class="fecha">Aplicació <strong>Papelario</strong> (<code>com.jrsoft.escanerdocumentos</code>) · Darrera actualització: 15 d'octubre de 2026</p>
 
 <div class="clave">
 <p><strong>En una frase:</strong> Papelario escaneja, desa i converteix els teus documents dins del teu telèfon. No hi ha comptes ni servidors propis, i els teus documents, el seu text i les teves signatures no surten del mòbil tret que tu els comparteixis. A part d'això, només en surten les dades tècniques i publicitàries que recullen les biblioteques de Google per escanejar, llegir el text i servir la publicitat, explicades més avall.</p>
@@ -59,7 +59,7 @@
 <h2>Dades que només es queden al teu telèfon</h2>
 <p>Aquesta informació es desa a l'emmagatzematge privat de l'aplicació. Desapareix si desinstal·les l'aplicació, si n'esborres les dades des de la configuració d'Android o si fas servir <em>Opcions → Esborra totes les meves dades</em>.</p>
 <ul>
-  <li>Els teus <strong>documents</strong>: les fotos originals de cada pàgina, les pàgines retallades i filtrades, i el nom, les dates, la carpeta i les etiquetes de cada document.</li>
+  <li>Els teus <strong>documents</strong>: les fotos originals de cada pàgina, les pàgines retallades i filtrades, i el nom, les dates, la carpeta i les etiquetes de cada document. Això inclou els documents d'identitat, els rebuts o els papers mèdics que escanegis: es tracten igual que qualsevol altre document, només al teu telèfon, i JR Soft no els rep.</li>
   <li>El <strong>text reconegut</strong> de cada pàgina (també el que corregeixes a mà), que serveix per cercar i va dins dels teus PDF.</li>
   <li>Les teves <strong>signatures</strong> desades.</li>
   <li>La <strong>paperera</strong>: el que esborres es guarda 30 dies i després s'elimina.</li>
@@ -67,11 +67,14 @@
   <li>Un PDF o una foto que obres des d'una altra aplicació es copia a la memòria temporal de l'aplicació per poder-lo importar.</li>
   <li>Un registre dels últims 10 errors de l'aplicació (data, part de l'aplicació i tipus d'error, sense text ni noms de documents), que només surt si envies «Informa d'un error».</li>
 </ul>
-<p><strong>Còpia de seguretat d'Android.</strong> L'aplicació no deixa que la còpia automàtica d'Android pugi al núvol de Google els teus documents, el seu text, les teves signatures ni la teva configuració. Sí que permet el traspàs directe d'un telèfon a un altre que fas tu quan canvies de mòbil (amb cable o en local, a Android 12 o posterior), perquè no perdis la biblioteca.</p>
+<p><strong>Còpies de seguretat i canvi de mòbil.</strong> La còpia de seguretat d'Android al núvol (la del teu compte de Google) està desactivada per a les dades d'aquesta aplicació: no se'n puja cap. Android sí que desa al teu compte la llista de les aplicacions que tenies instal·lades, per tornar-les a instal·lar, però aquesta llista la gestiona Google i no porta dades de l'aplicació.</p>
+<p>Si en configurar un mòbil nou copies les teves dades directament des de l'antic, amb cable o sense, les dades de l'aplicació poden passar al mòbil nou. Aquest traspàs el demanes tu i el fa Android, amb la seva eina o amb la del fabricant del mòbil i amb les seves pròpies condicions. Segons la documentació d'Android, va d'un mòbil a l'altre sense passar per servidors. En cap cas no passa pels nostres: JR Soft no rep res.</p>
+<p>Que es faci depèn de la versió d'Android i del fabricant (a Android 8 o anterior no es fa), així que no ho podem garantir. Si configures el mòbil nou des de la còpia del teu compte de Google, sense l'antic, les dades d'aquesta aplicació no tornen, perquè no són en aquesta còpia.</p>
+<p>No es traspassa el que només serveix al mòbil antic, com les dades xifrades amb claus d'aquell mòbil o la teva elecció sobre els anuncis: al mòbil nou l'aplicació te la tornarà a demanar.</p>
 
 <h2>El que decideixes compartir tu</h2>
 <ul>
-  <li><strong>Compartir i enviar per correu.</strong> Un document (PDF, imatges JPG, ZIP o Word) només surt del telèfon quan tu el comparteixes, amb l'aplicació que triïs a la pantalla d'Android. Si hi poses contrasenya, el PDF va xifrat amb AES-256.</li>
+  <li><strong>Compartir i enviar per correu.</strong> Un document (PDF, imatges JPG, ZIP, Word o Excel) només surt del telèfon quan tu el comparteixes, amb l'aplicació que triïs a la pantalla d'Android. Si hi poses contrasenya, el PDF va xifrat amb AES-256.</li>
   <li><strong>Desar al telèfon i carpeta mirall.</strong> Els PDF es desen a la carpeta que tries amb la pantalla d'Android. Si aquesta carpeta se sincronitza amb un núvol (per exemple, Google Drive), ho fa el servei que vas triar, amb les seves condicions.</li>
   <li><strong>Còpia de seguretat.</strong> Es desa com un fitxer on tu triïs. Si hi poses contrasenya, va xifrada (AES-256) i ningú no la pot obrir sense la contrasenya: si l'oblides, no hi ha manera de recuperar-la, ni tan sols nosaltres.</li>
   <li><strong>Targetes de visita.</strong> «Afegeix als contactes» obre l'aplicació de contactes del telèfon amb les dades ja emplenades; ets tu qui les desa.</li>
@@ -90,10 +93,11 @@
 <p>L'aplicació és gratuïta i es manté amb anuncis discrets de Google AdMob, que només apareixen a la biblioteca i a la pantalla «Document desat»: mai a la càmera, mentre edites ni a pantalla completa. Les peticions d'anuncis no porten res dels teus documents ni del seu text.</p>
 <p>Com qualsevol aplicació amb AdMob, l'SDK de Google recull l'<strong>identificador de publicitat</strong> d'Android (el pots restablir o esborrar a <em>Configuració d'Android → Google → Anuncis</em>), l'identificador del conjunt d'aplicacions (<em>app set ID</em>), la teva adreça IP (de la qual es dedueix una ubicació aproximada), les interaccions amb l'aplicació i amb els anuncis i dades de diagnòstic. Google les fa servir per servir i mesurar la publicitat, per a estadístiques i per prevenir fraus, segons la seva pròpia política.</p>
 <p>A l'Espai Econòmic Europeu, al Regne Unit i a Suïssa, l'aplicació mostra el formulari de consentiment de Google abans de servir publicitat personalitzada. Pots canviar la teva elecció quan vulguis a <em>Opcions → Opcions de privadesa dels anuncis</em>. Si ho rebutges, veuràs publicitat no personalitzada (o limitada, sense identificadors, si tampoc no acceptes l'ús de l'emmagatzematge) i l'aplicació funciona exactament igual.</p>
+<p>El missatge de consentiment dels anuncis el mostra Google amb un text comú a tots els seus socis publicitaris, i per això esmenta la geolocalització precisa. Segons Google, el seu SDK d'anuncis només fa servir la ubicació aproximada que es dedueix de l'adreça IP, i aquesta aplicació no li passa la ubicació del GPS. Pots rebutjar aquest ús a «Gestiona les opcions».</p>
 <p>Com fa servir Google la informació de les aplicacions que utilitzen els seus serveis: <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</p>
 
 <h3>Valoracions i Google Play</h3>
-<p>De tant en tant, després de fer-la servir amb èxit, l'aplicació et pot demanar una valoració amb la finestra oficial de Google Play, que gestiona Google. «Valora l'aplicació» i «Més aplicacions de JR Soft» obren Google Play.</p>
+<p>De tant en tant, després de fer-la servir amb èxit, l'aplicació et pot demanar una valoració amb la finestra oficial de Google Play, que gestiona Google. «Valora l'aplicació» i «Més aplicacions de JR Soft» obren Google Play. Per mostrar-te només les aplicacions disponibles al teu país, «Més aplicacions de JR Soft» mira al telèfon el país de la targeta SIM o el de la regió del sistema; aquesta dada no surt del mòbil. Els seus enllaços a Google Play porten un paràmetre que només indica que vénen de Papelario, sense cap dada teva.</p>
 
 <h3>Adreça IP</h3>
 <p>Com en qualsevol aplicació que es connecta a internet, els serveis de Google esmentats reben la teva adreça IP en connectar-se. Aquesta aplicació no té servidors propis, així que no desa registres de cap mena.</p>
@@ -133,12 +137,12 @@
 <h2>Els teus drets</h2>
 <p>Si resideixes a la Unió Europea, el RGPD et reconeix els drets d'accés, rectificació, supressió, limitació, portabilitat i oposició. A la pràctica, aquesta aplicació no desa cap dada teva fora del telèfon tret dels missatges que ens envies (per a aquests, escriu-nos a l'adreça de contacte); les dades d'AdMob i d'ML Kit les tracta Google, davant de qui pots exercir els teus drets (<a href="https://policies.google.com/privacy">policies.google.com/privacy</a>). Per al que és al teu telèfon:</p>
 <ul>
-  <li><strong>Accés i portabilitat:</strong> comparteix o desa els teus documents en PDF, JPG o Word, o fes una còpia de seguretat de tota la biblioteca des d'<em>Opcions</em>.</li>
+  <li><strong>Accés i portabilitat:</strong> comparteix o desa els teus documents en PDF, JPG, Word o Excel, o fes una còpia de seguretat de tota la biblioteca des d'<em>Opcions</em>.</li>
   <li><strong>Rectificació:</strong> canvia el nom dels teus documents o corregeix-ne el text a la mateixa aplicació.</li>
   <li><strong>Supressió:</strong> esborra un document, buida la paperera o fes servir <em>Opcions → Esborra totes les meves dades</em>; també pots desinstal·lar l'aplicació. No cal demanar res a ningú.</li>
   <li><strong>Oposició i retirada del consentiment:</strong> canvia la teva elecció de publicitat a <em>Opcions → Opcions de privadesa dels anuncis</em>.</li>
 </ul>
-<p>També pots escriure a l'adreça de contacte o presentar una reclamació davant l'autoritat de control del teu país. A Espanya és l'<a href="https://www.aepd.es">Agencia Española de Protección de Datos</a>.</p>
+<p>També pots escriure a l'adreça de contacte o presentar una reclamació davant l'<a href="https://www.aepd.es">Agencia Española de Protección de Datos</a> o davant l'autoritat de protecció de dades del teu país.</p>
 
 <h2>Menors</h2>
 <p>Papelario està pensada per a majors de 18 anys. No recollim conscientment dades de menors; les dades tècniques que envien AdMob i ML Kit són les descrites més amunt.</p>
@@ -150,7 +154,7 @@
 <p>Papelario fa servir biblioteques de codi obert, com ara Tesseract, PdfBox i Flutter. La llista amb les seves llicències és a <a href="licencias.html">licencias.html</a> i, completa, a l'aplicació: <em>Opcions → Llicències de codi obert</em>.</p>
 
 <footer>
-<p>Papelario · JR Soft (Javier Román Sáez) · <code>com.jrsoft.escanerdocumentos</code> · Contacte: <strong><a href="mailto:demual@gmail.com">demual@gmail.com</a></strong></p>
+<p>Papelario · JR Soft (Javier Román Sáez) · <code>com.jrsoft.escanerdocumentos</code> · Contacte: <strong><a href="mailto:demual@gmail.com">demual@gmail.com</a></strong> · <a href="index.html#idiomas">Altres idiomes</a></p>
 </footer>
 
 </body>

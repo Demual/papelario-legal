@@ -31,7 +31,7 @@
 <body>
 
 <h1>Kebijakan privasi</h1>
-<p class="fecha">Aplikasi <strong>Papelario</strong> (<code>com.jrsoft.escanerdocumentos</code>) · Terakhir diperbarui: 12 Oktober 2026</p>
+<p class="fecha">Aplikasi <strong>Papelario</strong> (<code>com.jrsoft.escanerdocumentos</code>) · Terakhir diperbarui: 15 Oktober 2026</p>
 
 <div class="clave">
 <p><strong>Singkatnya:</strong> Papelario memindai, menyimpan, dan mengonversi dokumenmu di dalam ponselmu. Tidak ada akun maupun server sendiri, dan dokumenmu, teksnya, serta tanda tanganmu tidak keluar dari ponsel kecuali saat kamu membagikannya. Selain itu, yang keluar hanyalah data teknis dan data iklan yang dikumpulkan library Google untuk memindai, membaca teks, dan menayangkan iklan, seperti dijelaskan di bawah.</p>
@@ -59,7 +59,7 @@
 <h2>Data yang hanya tersimpan di ponselmu</h2>
 <p>Informasi ini disimpan di penyimpanan pribadi aplikasi. Semuanya hilang jika kamu menghapus aplikasi, menghapus datanya dari setelan Android, atau memakai <em>Setelan → Hapus semua dataku</em>.</p>
 <ul>
-  <li><strong>Dokumen</strong>mu: foto asli setiap halaman, halaman yang sudah dipotong dan difilter, beserta nama, tanggal, folder, dan labelnya.</li>
+  <li><strong>Dokumen</strong>mu: foto asli setiap halaman, halaman yang sudah dipotong dan difilter, beserta nama, tanggal, folder, dan labelnya. Ini termasuk dokumen identitas, struk, atau surat medis yang kamu pindai: semuanya diperlakukan sama seperti dokumen lain, hanya di ponselmu, dan JR Soft tidak menerimanya.</li>
   <li><strong>Teks yang dikenali</strong> dari setiap halaman (termasuk yang kamu koreksi manual), yang dipakai untuk pencarian dan disertakan di dalam PDF-mu.</li>
   <li><strong>Tanda tangan</strong> yang kamu simpan.</li>
   <li><strong>Sampah</strong>: yang kamu hapus disimpan selama 30 hari, lalu dihapus.</li>
@@ -67,11 +67,14 @@
   <li>PDF atau foto yang kamu buka dari aplikasi lain disalin ke memori sementara aplikasi agar bisa diimpor.</li>
   <li>Catatan 10 error terakhir aplikasi (tanggal, bagian aplikasi, dan jenis error, tanpa teks maupun nama dokumen), yang hanya keluar jika kamu mengirim “Laporkan masalah”.</li>
 </ul>
-<p><strong>Cadangan Android.</strong> Aplikasi tidak mengizinkan cadangan otomatis Android mengunggah dokumen, teks, tanda tangan, maupun setelanmu ke cloud Google. Namun, aplikasi mengizinkan transfer langsung dari ponsel ke ponsel yang kamu lakukan sendiri saat ganti ponsel (lewat kabel atau secara lokal, di Android 12 atau yang lebih baru), agar pustakamu tidak hilang.</p>
+<p><strong>Cadangan dan ganti ponsel.</strong> Pencadangan Android ke cloud (yang ada di Akun Google kamu) dinonaktifkan untuk data aplikasi ini: tidak ada yang diunggah. Android memang menyimpan daftar aplikasi yang pernah kamu instal di akunmu agar bisa diinstal ulang, tetapi daftar itu dikelola Google dan tidak berisi data aplikasi.</p>
+<p>Jika saat menyiapkan ponsel baru kamu menyalin data langsung dari ponsel lama, dengan atau tanpa kabel, data aplikasi bisa pindah ke ponsel baru. Pemindahan ini kamu sendiri yang meminta, dan Android yang melakukannya, dengan alatnya sendiri atau alat dari produsen ponselmu, sesuai ketentuan mereka. Menurut dokumentasi Android, data berpindah dari satu ponsel ke ponsel lain tanpa melewati server. Dalam keadaan apa pun data itu tidak melewati server kami: JR Soft tidak menerima apa pun.</p>
+<p>Bisa tidaknya hal ini dilakukan bergantung pada versi Android dan produsennya (di Android 8 atau versi sebelumnya tidak dilakukan), jadi kami tidak bisa menjaminnya. Jika kamu menyiapkan ponsel baru dari cadangan Akun Google tanpa ponsel lama, data aplikasi ini tidak akan kembali, karena tidak ada di cadangan itu.</p>
+<p>Yang hanya berguna di ponsel lama tidak dipindahkan, seperti data yang dienkripsi dengan kunci ponsel itu atau pilihanmu soal iklan: di ponsel baru, aplikasi akan menanyakannya lagi.</p>
 
 <h2>Yang kamu putuskan untuk dibagikan</h2>
 <ul>
-  <li><strong>Bagikan dan kirim lewat email.</strong> Dokumen (PDF, gambar JPG, ZIP, atau Word) hanya keluar dari ponsel saat kamu membagikannya, dengan aplikasi yang kamu pilih di layar Android. Jika kamu memberinya kata sandi, PDF dienkripsi dengan AES-256.</li>
+  <li><strong>Bagikan dan kirim lewat email.</strong> Dokumen (PDF, gambar JPG, ZIP, Word, atau Excel) hanya keluar dari ponsel saat kamu membagikannya, dengan aplikasi yang kamu pilih di layar Android. Jika kamu memberinya kata sandi, PDF dienkripsi dengan AES-256.</li>
   <li><strong>Simpan ke ponsel dan folder cermin.</strong> PDF disimpan di folder yang kamu pilih lewat layar Android. Jika folder itu disinkronkan dengan cloud (misalnya Google Drive), sinkronisasi dilakukan oleh layanan yang kamu pilih, sesuai ketentuannya.</li>
   <li><strong>Cadangan.</strong> Disimpan sebagai file di tempat yang kamu pilih. Jika kamu memberinya kata sandi, cadangan dienkripsi (AES-256) dan tidak ada yang bisa membukanya tanpa kata sandi itu: jika kamu lupa, tidak ada cara untuk memulihkannya, termasuk bagi kami.</li>
   <li><strong>Kartu nama.</strong> “Tambahkan ke kontak” membuka aplikasi kontak di ponsel dengan data yang sudah terisi; kamulah yang menyimpannya.</li>
@@ -90,10 +93,11 @@
 <p>Aplikasi ini gratis dan didukung oleh iklan Google AdMob yang tidak mengganggu, yang hanya muncul di pustaka dan di layar “Dokumen tersimpan”: tidak pernah di kamera, saat kamu mengedit, atau dalam layar penuh. Permintaan iklan tidak membawa apa pun dari dokumenmu maupun teksnya.</p>
 <p>Seperti aplikasi lain yang memakai AdMob, SDK Google mengumpulkan <strong>ID iklan</strong> Android (kamu bisa meresetnya atau menghapusnya di <em>Setelan Android → Google → Iklan</em>), ID kumpulan aplikasi (<em>app set ID</em>), alamat IP-mu (yang bisa dipakai untuk memperkirakan lokasimu), interaksi dengan aplikasi dan iklan, serta data diagnostik. Google memakainya untuk menayangkan dan mengukur iklan, untuk statistik, dan untuk mencegah penipuan, sesuai kebijakannya sendiri.</p>
 <p>Di Wilayah Ekonomi Eropa, Inggris, dan Swiss, aplikasi menampilkan formulir persetujuan Google sebelum menayangkan iklan yang dipersonalisasi. Kamu bisa mengubah pilihanmu kapan saja di <em>Setelan → Opsi privasi iklan</em>. Jika kamu menolak, kamu akan melihat iklan yang tidak dipersonalisasi (atau terbatas, tanpa ID, jika kamu juga tidak menyetujui penggunaan penyimpanan) dan aplikasi tetap berfungsi persis sama.</p>
+<p>Pesan persetujuan iklan ditampilkan oleh Google dengan teks yang sama untuk semua mitra iklannya, karena itu pesan tersebut menyebut geolokasi akurat. Menurut Google, SDK iklannya hanya menggunakan perkiraan lokasi yang diperoleh dari alamat IP, dan aplikasi ini tidak memberinya lokasi GPS. Kamu bisa menolak penggunaan itu di “Kelola opsi”.</p>
 <p>Cara Google memakai informasi dari aplikasi yang memakai layanannya: <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</p>
 
 <h3>Penilaian dan Google Play</h3>
-<p>Sesekali, setelah kamu berhasil memakainya, aplikasi bisa memintamu memberi penilaian lewat jendela resmi Google Play yang dikelola Google. “Beri nilai aplikasi” dan “Aplikasi lain dari JR Soft” membuka Google Play.</p>
+<p>Sesekali, setelah kamu berhasil memakainya, aplikasi bisa memintamu memberi penilaian lewat jendela resmi Google Play yang dikelola Google. “Beri nilai aplikasi” dan “Aplikasi lain dari JR Soft” membuka Google Play. Agar hanya menampilkan aplikasi yang tersedia di negaramu, “Aplikasi lain dari JR Soft” memeriksa di ponsel negara kartu SIM atau wilayah sistem; data itu tidak keluar dari ponsel. Tautannya ke Google Play membawa parameter yang hanya menunjukkan bahwa tautan itu berasal dari Papelario, tanpa data apa pun tentangmu.</p>
 
 <h3>Alamat IP</h3>
 <p>Seperti aplikasi apa pun yang terhubung ke internet, layanan Google yang disebutkan di atas menerima alamat IP-mu saat terhubung. Aplikasi ini tidak punya server sendiri, jadi tidak menyimpan log dalam bentuk apa pun.</p>
@@ -133,12 +137,12 @@
 <h2>Hak-hakmu</h2>
 <p>Jika kamu tinggal di Uni Eropa, GDPR memberimu hak akses, perbaikan, penghapusan, pembatasan, portabilitas, dan keberatan. Dalam praktiknya, aplikasi ini tidak menyimpan data apa pun milikmu di luar ponsel, kecuali pesan yang kamu kirim kepada kami (untuk pesan itu, tulislah ke alamat kontak); data AdMob dan ML Kit diproses oleh Google, dan kamu bisa menggunakan hakmu terhadap Google (<a href="https://policies.google.com/privacy">policies.google.com/privacy</a>). Untuk yang ada di ponselmu:</p>
 <ul>
-  <li><strong>Akses dan portabilitas:</strong> bagikan atau simpan dokumenmu dalam PDF, JPG, atau Word, atau buat cadangan seluruh pustaka dari <em>Setelan</em>.</li>
+  <li><strong>Akses dan portabilitas:</strong> bagikan atau simpan dokumenmu dalam PDF, JPG, Word, atau Excel, atau buat cadangan seluruh pustaka dari <em>Setelan</em>.</li>
   <li><strong>Perbaikan:</strong> ganti nama dokumenmu atau koreksi teksnya di dalam aplikasi.</li>
   <li><strong>Penghapusan:</strong> hapus dokumen, kosongkan sampah, atau pakai <em>Setelan → Hapus semua dataku</em>; kamu juga bisa menghapus aplikasi. Tidak perlu meminta apa pun kepada siapa pun.</li>
   <li><strong>Keberatan dan penarikan persetujuan:</strong> ubah pilihan iklanmu di <em>Setelan → Opsi privasi iklan</em>.</li>
 </ul>
-<p>Kamu juga bisa menulis ke alamat kontak atau mengajukan keluhan ke otoritas pengawas di negaramu. Di Spanyol, otoritasnya adalah <a href="https://www.aepd.es">Agencia Española de Protección de Datos</a>.</p>
+<p>Kamu juga bisa menulis ke alamat kontak atau mengajukan keluhan ke <a href="https://www.aepd.es">Agencia Española de Protección de Datos</a> di Spanyol atau ke otoritas pelindungan data di negaramu.</p>
 
 <h2>Anak-anak</h2>
 <p>Papelario ditujukan untuk pengguna berusia 18 tahun ke atas. Kami tidak dengan sengaja mengumpulkan data anak di bawah umur; data teknis yang dikirim AdMob dan ML Kit adalah yang dijelaskan di atas.</p>
@@ -150,7 +154,7 @@
 <p>Papelario memakai library sumber terbuka, seperti Tesseract, PdfBox, dan Flutter. Daftar beserta lisensinya ada di <a href="licencias.html">licencias.html</a> dan, versi lengkapnya, di aplikasi: <em>Setelan → Lisensi sumber terbuka</em>.</p>
 
 <footer>
-<p>Papelario · JR Soft (Javier Román Sáez) · <code>com.jrsoft.escanerdocumentos</code> · Kontak: <strong><a href="mailto:demual@gmail.com">demual@gmail.com</a></strong></p>
+<p>Papelario · JR Soft (Javier Román Sáez) · <code>com.jrsoft.escanerdocumentos</code> · Kontak: <strong><a href="mailto:demual@gmail.com">demual@gmail.com</a></strong> · <a href="index.html#idiomas">Bahasa lain</a></p>
 </footer>
 
 </body>

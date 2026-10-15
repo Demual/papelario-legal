@@ -31,7 +31,7 @@
 <body>
 
 <h1>Gizlilik politikası</h1>
-<p class="fecha"><strong>Papelario</strong> uygulaması (<code>com.jrsoft.escanerdocumentos</code>) · Son güncelleme: 12 Ekim 2026</p>
+<p class="fecha"><strong>Papelario</strong> uygulaması (<code>com.jrsoft.escanerdocumentos</code>) · Son güncelleme: 15 Ekim 2026</p>
 
 <div class="clave">
 <p><strong>Tek cümleyle:</strong> Papelario belgelerini telefonunun içinde tarar, saklar ve dönüştürür. Hesap da kendi sunucumuz da yoktur; belgelerin, metinleri ve imzaların, sen paylaşmadıkça telefondan çıkmaz. Bunun dışında yalnızca Google kütüphanelerinin tarama, metin okuma ve reklam gösterme için topladığı, aşağıda açıklanan teknik ve reklamla ilgili veriler dışarı çıkar.</p>
@@ -59,7 +59,7 @@
 <h2>Yalnızca telefonunda kalan veriler</h2>
 <p>Bu bilgiler uygulamanın özel depolama alanında saklanır. Uygulamayı kaldırırsan, verilerini Android ayarlarından silersen ya da <em>Ayarlar → Tüm verilerimi sil</em> seçeneğini kullanırsan kaybolur.</p>
 <ul>
-  <li><strong>Belgelerin</strong>: her sayfanın orijinal fotoğrafları, kırpılmış ve filtrelenmiş sayfalar, adları, tarihleri, klasörleri ve etiketleri.</li>
+  <li><strong>Belgelerin</strong>: her sayfanın orijinal fotoğrafları, kırpılmış ve filtrelenmiş sayfalar, adları, tarihleri, klasörleri ve etiketleri. Buna taradığın kimlik belgeleri, fişler ya da tıbbi belgeler de dahildir: diğer belgeler gibi yalnızca telefonunda işlenir ve JR Soft bunları almaz.</li>
   <li>Her sayfanın <strong>tanınan metni</strong> (elle düzelttiğin metin de dahil); arama için kullanılır ve PDF’lerinin içine eklenir.</li>
   <li>Kaydettiğin <strong>imzalar</strong>.</li>
   <li><strong>Çöp kutusu</strong>: sildiklerin 30 gün saklanır, sonra silinir.</li>
@@ -67,11 +67,14 @@
   <li>Başka bir uygulamadan açtığın bir PDF ya da fotoğraf, içe aktarılabilmesi için uygulamanın geçici belleğine kopyalanır.</li>
   <li>Uygulamanın son 10 hatasının kaydı (tarih, uygulamanın ilgili bölümü ve hata türü; metin ya da belge adı olmadan). Bu kayıt yalnızca “Sorun bildir” ile sen gönderirsen telefondan çıkar.</li>
 </ul>
-<p><strong>Android yedeklemesi.</strong> Uygulama, Android’in otomatik yedeklemesinin belgelerini, bunların metnini, imzalarını ve ayarlarını Google bulutuna yüklemesine izin vermez. Ama telefon değiştirirken senin yaptığın doğrudan telefondan telefona aktarıma (Android 12 veya sonraki sürümlerde, kabloyla ya da yerel olarak) izin verir; böylece kitaplığını kaybetmezsin.</p>
+<p><strong>Yedekler ve telefon değiştirme.</strong> Android’in buluta yedeklemesi (Google hesabındaki) bu uygulamanın verileri için kapalıdır: hiçbiri yüklenmez. Android, yeniden yükleyebilmek için yüklü uygulamalarının listesini hesabında saklar; ancak bu listeyi Google yönetir ve listede uygulamanın verileri yoktur.</p>
+<p>Yeni bir telefonu kurarken verilerini kabloyla ya da kablosuz olarak doğrudan eski telefondan kopyalarsan uygulamanın verileri yeni telefona geçebilir. Bu aktarımı sen istersin; Android de kendi aracıyla ya da telefon üreticisinin aracıyla, onların koşullarıyla yapar. Android belgelerine göre veriler sunuculardan geçmeden bir telefondan diğerine gider. Hiçbir durumda bizim sunucularımızdan geçmez: JR Soft hiçbir şey almaz.</p>
+<p>Aktarımın yapılıp yapılmayacağı Android sürümüne ve üreticiye bağlıdır (Android 8 ve öncesinde yapılmaz), bu yüzden bunu garanti edemeyiz. Yeni telefonu eski telefon olmadan Google hesabının yedeğinden kurarsan bu uygulamanın verileri geri gelmez, çünkü o yedekte yoktur.</p>
+<p>Yalnızca eski telefonda işe yarayan şeyler aktarılmaz; örneğin o telefonun anahtarlarıyla şifrelenmiş veriler ya da reklamlarla ilgili tercihin: uygulama bunu yeni telefonda sana yeniden sorar.</p>
 
 <h2>Paylaşmaya senin karar verdiklerin</h2>
 <ul>
-  <li><strong>Paylaşma ve e-postayla gönderme.</strong> Bir belge (PDF, JPG görseller, ZIP ya da Word) yalnızca sen paylaştığında, Android ekranında seçtiğin uygulamayla telefondan çıkar. Şifre koyarsan PDF, AES-256 ile şifrelenir.</li>
+  <li><strong>Paylaşma ve e-postayla gönderme.</strong> Bir belge (PDF, JPG görseller, ZIP, Word ya da Excel) yalnızca sen paylaştığında, Android ekranında seçtiğin uygulamayla telefondan çıkar. Şifre koyarsan PDF, AES-256 ile şifrelenir.</li>
   <li><strong>Telefona kaydetme ve ayna klasör.</strong> PDF’ler, Android ekranında seçtiğin klasöre kaydedilir. Bu klasör bir bulutla (örneğin Google Drive) eşitleniyorsa bunu, seçtiğin hizmet kendi koşullarıyla yapar.</li>
   <li><strong>Yedek.</strong> Seçtiğin yere bir dosya olarak kaydedilir. Şifre koyarsan yedek şifrelenir (AES-256) ve şifre olmadan kimse açamaz: şifreyi unutursan onu kurtarmanın hiçbir yolu yoktur, bizim için bile.</li>
   <li><strong>Kartvizitler.</strong> “Kişilere ekle”, telefonun kişiler uygulamasını bilgiler doldurulmuş olarak açar; kaydeden sensin.</li>
@@ -90,10 +93,11 @@
 <p>Uygulama ücretsizdir ve yalnızca kitaplıkta ve “Belge kaydedildi” ekranında görünen, göze batmayan Google AdMob reklamlarıyla ayakta durur: kamerada, düzenleme yaparken ya da tam ekranda asla. Reklam isteklerinde belgelerinden ya da metinlerinden hiçbir şey yer almaz.</p>
 <p>AdMob kullanan her uygulamada olduğu gibi Google SDK’sı; Android <strong>reklam kimliğini</strong> (bunu <em>Android Ayarları → Google → Reklamlar</em> bölümünden sıfırlayabilir ya da silebilirsin), uygulama grubu kimliğini (<em>app set ID</em>), IP adresini (bundan yaklaşık bir konum çıkarılır), uygulamayla ve reklamlarla etkileşimleri ve teşhis verilerini toplar. Google bunları kendi politikasına göre reklam göstermek ve ölçmek, istatistik ve dolandırıcılığı önlemek için kullanır.</p>
 <p>Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre’de uygulama, kişiselleştirilmiş reklam göstermeden önce Google’ın onay formunu gösterir. Tercihini istediğin zaman <em>Ayarlar → Reklam gizlilik seçenekleri</em> bölümünden değiştirebilirsin. Reddedersen kişiselleştirilmemiş reklamlar (depolama alanının kullanılmasını da kabul etmezsen kimlik kullanılmayan sınırlı reklamlar) görürsün ve uygulama tamamen aynı şekilde çalışır.</p>
+<p>Reklam onay mesajını Google, tüm reklam ortakları için ortak olan bir metinle gösterir; bu yüzden mesajda kesin coğrafi konumdan söz edilir. Google’a göre reklam SDK’sı yalnızca IP adresinden çıkarılan yaklaşık konumu kullanır ve bu uygulama ona GPS konumunu vermez. Bu kullanımı “Seçenekleri yönet” bölümünden reddedebilirsin.</p>
 <p>Google’ın, hizmetlerini kullanan uygulamalardaki bilgileri nasıl kullandığı: <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</p>
 
 <h3>Değerlendirmeler ve Google Play</h3>
-<p>Uygulama, zaman zaman ve başarılı bir kullanımdan sonra, Google’ın yönettiği resmî Google Play penceresiyle senden bir değerlendirme isteyebilir. “Uygulamayı değerlendir” ve “JR Soft'un diğer uygulamaları” Google Play’i açar.</p>
+<p>Uygulama, zaman zaman ve başarılı bir kullanımdan sonra, Google’ın yönettiği resmî Google Play penceresiyle senden bir değerlendirme isteyebilir. “Uygulamayı değerlendir” ve “JR Soft'un diğer uygulamaları” Google Play’i açar. Yalnızca ülkende bulunan uygulamaları göstermek için “JR Soft'un diğer uygulamaları” telefonda SIM kartın ülkesine ya da sistem bölgesine bakar; bu bilgi telefondan çıkmaz. Google Play bağlantılarında yalnızca Papelario’dan geldiklerini belirten bir parametre bulunur; seninle ilgili hiçbir veri yoktur.</p>
 
 <h3>IP adresi</h3>
 <p>İnternete bağlanan her uygulamada olduğu gibi, adı geçen Google hizmetleri bağlantı sırasında IP adresini alır. Bu uygulamanın kendi sunucuları olmadığı için hiçbir türde kayıt tutmaz.</p>
@@ -133,12 +137,12 @@
 <h2>Hakların</h2>
 <p>Avrupa Birliği’nde yaşıyorsan GDPR sana erişim, düzeltme, silme, kısıtlama, taşınabilirlik ve itiraz haklarını tanır. Pratikte bu uygulama, bize gönderdiğin mesajlar dışında telefonun dışında hiçbir verini saklamaz (bunlar için iletişim adresine yaz); AdMob ve ML Kit verilerini Google işler ve bu verilerle ilgili haklarını Google’a karşı kullanabilirsin (<a href="https://policies.google.com/privacy">policies.google.com/privacy</a>). Telefonunda olanlar için:</p>
 <ul>
-  <li><strong>Erişim ve taşınabilirlik:</strong> belgelerini PDF, JPG ya da Word olarak paylaş veya kaydet ya da <em>Ayarlar</em> bölümünden tüm kitaplığının yedeğini al.</li>
+  <li><strong>Erişim ve taşınabilirlik:</strong> belgelerini PDF, JPG, Word ya da Excel olarak paylaş veya kaydet ya da <em>Ayarlar</em> bölümünden tüm kitaplığının yedeğini al.</li>
   <li><strong>Düzeltme:</strong> belgelerinin adını değiştir ya da metinlerini uygulamanın içinde düzelt.</li>
   <li><strong>Silme:</strong> bir belgeyi sil, çöp kutusunu boşalt ya da <em>Ayarlar → Tüm verilerimi sil</em> seçeneğini kullan; uygulamayı da kaldırabilirsin. Kimseden bir şey istemene gerek yok.</li>
   <li><strong>İtiraz ve onayın geri çekilmesi:</strong> reklam tercihini <em>Ayarlar → Reklam gizlilik seçenekleri</em> bölümünden değiştir.</li>
 </ul>
-<p>İletişim adresine yazabilir ya da kendi ülkendeki denetim makamına şikâyette bulunabilirsin. İspanya’da bu makam <a href="https://www.aepd.es">Agencia Española de Protección de Datos</a>’tur (İspanya Veri Koruma Ajansı).</p>
+<p>İletişim adresine yazabilir ya da İspanya Veri Koruma Ajansı’na (<a href="https://www.aepd.es">Agencia Española de Protección de Datos</a>) veya kendi ülkendeki veri koruma makamına şikâyette bulunabilirsin.</p>
 
 <h2>Çocuklar</h2>
 <p>Papelario 18 yaş ve üzerindeki kişiler için tasarlanmıştır. Reşit olmayanlardan bilerek veri toplamayız; AdMob ve ML Kit’in gönderdiği teknik veriler yukarıda açıklananlardır.</p>
@@ -150,7 +154,7 @@
 <p>Papelario; Tesseract, PdfBox ve Flutter gibi açık kaynaklı kütüphaneler kullanır. Lisanslarıyla birlikte liste <a href="licencias.html">licencias.html</a> sayfasında, tam hâli ise uygulamadadır: <em>Ayarlar → Açık kaynak lisansları</em>.</p>
 
 <footer>
-<p>Papelario · JR Soft (Javier Román Sáez) · <code>com.jrsoft.escanerdocumentos</code> · İletişim: <strong><a href="mailto:demual@gmail.com">demual@gmail.com</a></strong></p>
+<p>Papelario · JR Soft (Javier Román Sáez) · <code>com.jrsoft.escanerdocumentos</code> · İletişim: <strong><a href="mailto:demual@gmail.com">demual@gmail.com</a></strong> · <a href="index.html#idiomas">Diğer diller</a></p>
 </footer>
 
 </body>
