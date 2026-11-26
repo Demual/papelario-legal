@@ -31,7 +31,7 @@
 <body>
 
 <h1>Datenschutzerklärung</h1>
-<p class="fecha">App <strong>Papelario</strong> (<code>com.jrsoft.escanerdocumentos</code>) · Letzte Aktualisierung: 12. November 2026</p>
+<p class="fecha">App <strong>Papelario</strong> (<code>com.jrsoft.escanerdocumentos</code>) · Letzte Aktualisierung: 26. November 2026</p>
 
 <div class="clave">
 <p><strong>In einem Satz:</strong> Papelario scannt, speichert und konvertiert deine Dokumente auf deinem Handy. Es gibt keine Konten und keine eigenen Server, und deine Dokumente, ihr Text und deine Unterschriften verlassen das Handy nur, wenn du sie teilst. Abgesehen davon verlassen es nur die technischen und werbebezogenen Daten, die die Google-Bibliotheken zum Scannen, zum Lesen des Textes und zum Ausliefern der Werbung erheben, wie weiter unten erklärt.</p>
@@ -59,7 +59,8 @@
 <h2>Daten, die nur auf deinem Handy bleiben</h2>
 <p>Diese Informationen werden im privaten Speicher der App abgelegt. Sie verschwinden, wenn du die App deinstallierst, ihre Daten in den Android-Einstellungen löschst oder <em>Optionen → Alle meine Daten löschen</em> verwendest.</p>
 <ul>
-  <li>Deine <strong>Dokumente</strong>: die Originalfotos jeder Seite, die zugeschnittenen und gefilterten Seiten sowie Name, Datumsangaben, Ordner und Schlagwörter.</li>
+  <li>Deine <strong>Dokumente</strong>: die Originalfotos jeder Seite, die zugeschnittenen und gefilterten Seiten sowie Name, Datumsangaben, Ordner und Schlagwörter. Dazu gehören auch Ausweisdokumente, Belege oder medizinische Unterlagen, die du scannst: Sie werden wie jedes andere Dokument behandelt, nur auf deinem Handy, und JR Soft erhält sie nicht.</li>
+  <li>Die <strong>Visitenkarten</strong>, die du in der Bibliothek behältst: das Foto und sein Text mit den Daten der Person darauf, mit dem Namen dieser Person oder ihrer Firma als Dokumentname. Wenn du im Modus „Visitenkarte“ scannst und „Karte auch in Papelario behalten“ ausschaltest, werden das Foto und seine Daten gelöscht, sobald du die Prüfung verlässt. Alles andere, was du in „Kontakt prüfen“ eingibst, wird nicht in Papelario gespeichert.</li>
   <li>Der <strong>erkannte Text</strong> jeder Seite (auch der, den du von Hand korrigierst), der für die Suche dient und in deinen PDFs enthalten ist.</li>
   <li>Deine gespeicherten <strong>Unterschriften</strong>.</li>
   <li>Der <strong>Papierkorb</strong>: Was du löschst, bleibt 30 Tage erhalten und wird dann entfernt.</li>
@@ -67,18 +68,22 @@
   <li>Ein PDF oder Foto, das du aus einer anderen App öffnest, wird in den temporären Speicher der App kopiert, damit es importiert werden kann.</li>
   <li>Ein Protokoll der letzten 10 Fehler der App (Datum, Bereich der App und Fehlerart, ohne Text oder Dokumentnamen), das das Handy nur verlässt, wenn du „Problem melden“ abschickst.</li>
 </ul>
-<p><strong>Android-Sicherung.</strong> Die App erlaubt der automatischen Android-Sicherung nicht, deine Dokumente, ihren Text, deine Unterschriften oder deine Einstellungen in die Google-Cloud hochzuladen. Erlaubt ist dagegen die direkte Übertragung von Handy zu Handy, die du selbst beim Handywechsel vornimmst (per Kabel oder lokal, ab Android 12), damit deine Bibliothek nicht verloren geht.</p>
+<p><strong>Sicherungen und Handywechsel.</strong> Die Cloud-Sicherung von Android (die in deinem Google-Konto) ist für die Daten dieser App deaktiviert: Es wird keine davon hochgeladen. Android speichert in deinem Konto zwar die Liste der Apps, die du installiert hattest, um sie erneut zu installieren, aber diese Liste verwaltet Google, und sie enthält keine Daten der App.</p>
+<p>Wenn du beim Einrichten eines neuen Handys deine Daten direkt vom alten kopierst, mit oder ohne Kabel, können die Daten der App auf das neue Handy übertragen werden. Diese Übertragung veranlasst du, und Android führt sie aus, mit dem eigenen Tool oder dem des Handyherstellers und zu deren eigenen Bedingungen. Laut der Android-Dokumentation geht sie direkt von einem Handy zum anderen, ohne über Server zu laufen. Über unsere läuft sie in keinem Fall: JR Soft erhält nichts.</p>
+<p>Ob sie stattfindet, hängt von der Android-Version und vom Hersteller ab (unter Android 8 oder älter findet sie nicht statt), daher können wir sie nicht garantieren. Wenn du das neue Handy aus der Sicherung deines Google-Kontos einrichtest, ohne das alte, kommen die Daten dieser App nicht zurück, weil sie nicht in dieser Sicherung sind.</p>
+<p>Nicht übertragen wird, was nur auf dem alten Handy Sinn ergibt, etwa mit Schlüsseln dieses Handys verschlüsselte Daten oder deine Entscheidung zur Werbung: Auf dem neuen Handy fragt dich die App erneut.</p>
 
 <h2>Was du selbst teilst</h2>
 <ul>
-  <li><strong>Teilen und per E-Mail senden.</strong> Ein Dokument (PDF, JPG-Bilder, ZIP oder Word) verlässt dein Handy nur, wenn du es teilst, und zwar mit der App, die du im Android-Bildschirm auswählst. Wenn du ein Passwort festlegst, wird das PDF mit AES-256 verschlüsselt.</li>
+  <li><strong>Teilen und per E-Mail senden.</strong> Ein Dokument (PDF, JPG-Bilder, ZIP, Word oder Excel) verlässt dein Handy nur, wenn du es teilst, und zwar mit der App, die du im Android-Bildschirm auswählst. Wenn du ein Passwort festlegst, wird das PDF mit AES-256 verschlüsselt.</li>
   <li><strong>Auf dem Handy speichern und Spiegelordner.</strong> PDFs werden in dem Ordner gespeichert, den du im Android-Bildschirm auswählst. Wenn dieser Ordner mit einer Cloud synchronisiert wird (zum Beispiel Google Drive), übernimmt das der von dir gewählte Dienst, zu seinen eigenen Bedingungen.</li>
   <li><strong>Sicherung.</strong> Sie wird als Datei gespeichert, wo du willst. Wenn du ein Passwort festlegst, ist sie verschlüsselt (AES-256) und niemand kann sie ohne das Passwort öffnen: Wenn du es vergisst, gibt es keine Möglichkeit, sie wiederherzustellen, auch nicht für uns.</li>
-  <li><strong>Visitenkarten.</strong> „Zu Kontakten hinzufügen“ öffnet die Kontakte-App des Handys mit bereits ausgefüllten Daten; speichern tust du sie selbst.</li>
+  <li><strong>Visitenkarten und Kontakte.</strong> „Kontakt erstellen“ liest Name, Position, Firma, Telefonnummern, E-Mail-Adressen, Website und Anschrift aus dem erkannten Text, auf deinem Handy, und zeigt sie dir in „Kontakt prüfen“, damit du sie korrigieren kannst. „In Kontakten speichern“ öffnet die Kontakte-App des Handys mit diesen Daten, und diese App speichert den Kontakt, nach ihren eigenen Bedingungen (zum Beispiel, wenn sie deine Kontakte mit deinem Konto synchronisiert). Papelario liest deine Kontakte nicht und fragt nicht nach einer Berechtigung dafür. „vCard teilen“ legt den Kontakt als temporäre Datei im privaten Speicher der App an; sie wird nicht in deiner Bibliothek gespeichert und verlässt dein Handy nur mit der App, die du auswählst.</li>
   <li><strong>Zwischenablage.</strong> Die App kopiert Text nur dann in die Zwischenablage, wenn du es veranlasst.</li>
   <li><strong>Vorlesen.</strong> Der Text wird mit einer Stimme der jeweiligen Sprache vorgelesen, die auf dein Handy heruntergeladen ist und offline funktioniert: Er verlässt das Handy nicht. Wenn du keine hast, liest die App den Text nicht vor und zeigt dir, wie du die Stimme in den Android-Einstellungen herunterlädst.</li>
   <li><strong>Problem melden.</strong> Öffnet deine E-Mail-App mit einer Nachricht, die die App-Version, das Handymodell, die Android-Version, die Sprache der App sowie Datum, Bereich der App und Art der letzten Fehler enthält (ohne deine Dokumente oder Texte). Sie wird nur gesendet, wenn du sie abschickst. Wenn du sie uns schickst, erhalten wir deine E-Mail-Adresse und diesen Text; wir verwenden sie nur, um dir zu antworten und den Fehler zu beheben, und löschen die Nachricht, sobald der Fehler behoben ist, spätestens aber ein Jahr nach Erhalt.</li>
 </ul>
+<p><strong>Daten anderer Personen.</strong> Eine Visitenkarte enthält, wie viele Dokumente, Daten einer anderen Person. Papelario behandelt sie wie deine Dokumente: nur auf deinem Handy, ohne sie an JR Soft oder sonst jemanden zu senden, außer du teilst sie. Wenn du sie für deine Arbeit oder deine Firma nutzt und nicht nur für dich, bist du (oder deine Firma) nach dem Datenschutzrecht für sie verantwortlich.</p>
 
 <h2>Daten, die dein Handy verlassen</h2>
 
@@ -90,6 +95,7 @@
 <p>Die App ist kostenlos und finanziert sich durch dezente Anzeigen von Google AdMob, die nur in der Bibliothek und im Bildschirm „Dokument gespeichert“ erscheinen: nie in der Kamera, beim Bearbeiten oder als Vollbild. Die Anzeigenanfragen enthalten nichts aus deinen Dokumenten oder ihrem Text.</p>
 <p>Wie bei jeder App mit AdMob erfasst das SDK von Google die <strong>Werbe-ID</strong> von Android (du kannst sie unter <em>Android-Einstellungen → Google → Werbung</em> zurücksetzen oder löschen), die Kennung des App-Sets (<em>app set ID</em>), deine IP-Adresse (aus der ein ungefährer Standort abgeleitet wird), die Interaktionen mit der App und mit den Anzeigen sowie Diagnosedaten. Google verwendet diese Daten, um Werbung auszuliefern und zu messen, für Statistiken und zur Betrugsprävention, gemäß seiner eigenen Richtlinie.</p>
 <p>Im Europäischen Wirtschaftsraum, im Vereinigten Königreich und in der Schweiz zeigt die App das Einwilligungsformular von Google an, bevor personalisierte Werbung ausgeliefert wird. Du kannst deine Entscheidung jederzeit unter <em>Optionen → Datenschutzoptionen für Werbung</em> ändern. Wenn du ablehnst, siehst du nicht personalisierte Werbung (oder eingeschränkte Werbung ohne Kennungen, wenn du auch der Nutzung des Speichers nicht zustimmst), und die App funktioniert genau gleich.</p>
+<p>Die Einwilligungsabfrage für Werbung zeigt Google mit einem Text an, der für alle seine Werbepartner gleich ist; deshalb erwähnt sie genaue Standortdaten. Laut Google verwendet sein Werbe-SDK nur den ungefähren Standort, der sich aus der IP-Adresse ableiten lässt, und diese App gibt ihm nicht den GPS-Standort weiter. Du kannst diese Nutzung unter „Optionen verwalten“ ablehnen.</p>
 <p>Wie Google Informationen aus Apps verwendet, die seine Dienste nutzen: <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</p>
 
 <h3>Bewertungen und Google Play</h3>
@@ -131,17 +137,17 @@
 <p>Die auf deinem Handy gespeicherten Daten bleiben dort, bis du sie löschst, die App deinstallierst oder die App-Daten löschst. Diese App speichert keine Daten außerhalb deines Handys, außer den Nachrichten, die du uns schickst und die gelöscht werden, sobald der Fehler behoben ist, spätestens aber ein Jahr nach Erhalt; Google bewahrt seine Daten gemäß seinen Richtlinien auf.</p>
 
 <h2 id="seguridad">Sicherheit</h2>
-<p>Deine Dokumente, ihr Text, deine Unterschriften, deine Einstellungen und die temporären Kopien liegen im privaten Speicher der App, auf den Android anderen Apps keinen Zugriff gibt, und werden nicht in die Cloud-Sicherung hochgeladen. Die App hat keine eigenen Server oder Konten, bei denen es zu einem Datenleck kommen könnte. Wenn du die App-Sperre aktivierst, brauchst du zum Öffnen deinen Fingerabdruck, dein Gesicht oder die PIN, das Muster oder das Passwort deines Handys. Wenn du ein PDF oder eine Sicherung mit einem Passwort schützt, wird die Datei mit AES-256 verschlüsselt. Was du in einem Ordner speicherst oder teilst, liegt dort, wo du es auswählst, mit dem Schutz, den dieser Ort bietet. Die Verbindungen der Google-Bibliotheken (ML Kit und AdMob) sind verschlüsselt (HTTPS). Die Nachrichten, die du uns schickst, liegen in einem E-Mail-Konto, auf das nur JR Soft Zugriff hat, und werden innerhalb der oben genannten Fristen gelöscht.</p>
+<p>Deine Dokumente, ihr Text, deine Unterschriften, deine Einstellungen und die temporären Kopien liegen im privaten Speicher der App, auf den Android anderen Apps keinen Zugriff gibt, und werden nicht in die Cloud-Sicherung hochgeladen. Auf ein anderes Handy gelangen sie nur, wenn du selbst die direkte Übertragung von Handy zu Handy machst (siehe „Sicherungen und Handywechsel“). Die App hat keine eigenen Server oder Konten, bei denen es zu einem Datenleck kommen könnte. Wenn du die App-Sperre aktivierst, brauchst du zum Öffnen deinen Fingerabdruck, dein Gesicht oder die PIN, das Muster oder das Passwort deines Handys. Wenn du ein PDF oder eine Sicherung mit einem Passwort schützt, wird die Datei mit AES-256 verschlüsselt. Was du in einem Ordner speicherst oder teilst, liegt dort, wo du es auswählst, mit dem Schutz, den dieser Ort bietet. Die Verbindungen der Google-Bibliotheken (ML Kit und AdMob) sind verschlüsselt (HTTPS). Die Nachrichten, die du uns schickst, liegen in einem E-Mail-Konto, auf das nur JR Soft Zugriff hat, und werden innerhalb der oben genannten Fristen gelöscht.</p>
 
 <h2>Deine Rechte</h2>
 <p>Wenn du in der Europäischen Union wohnst, gewährt dir die DSGVO die Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit und Widerspruch. In der Praxis speichert diese App keine Daten von dir außerhalb des Handys, außer den Nachrichten, die du uns schickst (dafür schreib uns an die Kontaktadresse); die Daten von AdMob und ML Kit verarbeitet Google, bei dem du deine Rechte geltend machen kannst (<a href="https://policies.google.com/privacy">policies.google.com/privacy</a>). Für das, was auf deinem Handy ist:</p>
 <ul>
-  <li><strong>Auskunft und Datenübertragbarkeit:</strong> Teile oder speichere deine Dokumente als PDF, JPG oder Word, oder erstelle unter <em>Optionen</em> eine Sicherung deiner gesamten Bibliothek.</li>
+  <li><strong>Auskunft und Datenübertragbarkeit:</strong> Teile oder speichere deine Dokumente als PDF, JPG, Word oder Excel, oder erstelle unter <em>Optionen</em> eine Sicherung deiner gesamten Bibliothek.</li>
   <li><strong>Berichtigung:</strong> Benenne deine Dokumente um oder korrigiere ihren Text in der App selbst.</li>
   <li><strong>Löschung:</strong> Lösche ein Dokument, leere den Papierkorb oder nutze <em>Optionen → Alle meine Daten löschen</em>; du kannst die App auch deinstallieren. Du musst niemanden um etwas bitten.</li>
   <li><strong>Widerspruch und Widerruf der Einwilligung:</strong> Ändere deine Entscheidung zur Werbung unter <em>Optionen → Datenschutzoptionen für Werbung</em>.</li>
 </ul>
-<p>Du kannst auch an die Kontaktadresse schreiben oder dich bei der Datenschutz-Aufsichtsbehörde deines Landes beschweren. In Spanien ist das die <a href="https://www.aepd.es">Agencia Española de Protección de Datos</a>.</p>
+<p>Du kannst auch an die Kontaktadresse schreiben oder dich bei der <a href="https://www.aepd.es">Agencia Española de Protección de Datos</a> in Spanien oder bei der Datenschutzbehörde deines Landes beschweren.</p>
 
 <h2 id="eeuu">Wohnsitz in den USA</h2>
 <p>Wenn du in einem US-Bundesstaat mit eigenem Datenschutzgesetz lebst (zum Beispiel Kalifornien, Colorado, Connecticut, Texas oder Virginia), hast du das Recht zu verlangen, dass deine personenbezogenen Daten weder verkauft noch für zielgerichtete Werbung weitergegeben werden. Das geht in der App: <em>Optionen → Datenschutzoptionen für Werbung</em> → „Don't sell or share my data“. Danach siehst du nur noch nicht personalisierte Anzeigen. Die App sendet niemandem sensible Daten; deine Dokumente bleiben auf deinem Handy. Für die Anzeigen verwendet das SDK von Google Gerätekennungen und einen ungefähren Standort (auf Stadtebene). Für alle anderen Anfragen zu deinen Daten schreib uns an <a href="mailto:demual@gmail.com">demual@gmail.com</a>.</p>
@@ -156,7 +162,7 @@
 <p>Papelario verwendet Open-Source-Bibliotheken wie Tesseract, PdfBox und Flutter. Die Liste mit ihren Lizenzen findest du unter <a href="licencias.html">licencias.html</a> und vollständig in der App: <em>Optionen → Open-Source-Lizenzen</em>.</p>
 
 <footer>
-<p>Papelario · JR Soft (Javier Román Sáez) · <code>com.jrsoft.escanerdocumentos</code> · Kontakt: <strong><a href="mailto:demual@gmail.com">demual@gmail.com</a></strong></p>
+<p>Papelario · JR Soft (Javier Román Sáez) · <code>com.jrsoft.escanerdocumentos</code> · Kontakt: <strong><a href="mailto:demual@gmail.com">demual@gmail.com</a></strong> · <a href="index.html#idiomas">Andere Sprachen</a></p>
 </footer>
 
 </body>
